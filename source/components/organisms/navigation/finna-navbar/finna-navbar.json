@@ -1,0 +1,11 @@
+{
+  "additionalClasses": "",
+  "ariaLabel": "Finna navbar",
+  "brandContent": "Brand content",
+  "brandLink": "#",
+  "brandSrOnly": "",
+  "collapseContent": "<p>Collapse content</p>",
+  "collapseId": "finna-navbar-collapse",
+  "toggleBtnIconClass": "fa-handle-open",
+  "toggleBtnSrOnly": ""
+}

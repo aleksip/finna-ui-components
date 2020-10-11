@@ -1,0 +1,37 @@
+<?= $this->render('components/molecules/navigation/finna-nav-tabs/finna-nav-tabs.phtml', [
+    'ariaLabel' => $ariaLabel,
+    'tabs' => $tabs,
+    'additionalClasses' => $additionalClasses
+  ]); ?>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var isTooltip = <?= json_encode($tooltipDemo); ?>;
+
+      var $tablist = $('.<?= $additionalClasses ?>');
+      var $tabs = $tablist.find('li');
+
+      if (isTooltip) {
+        var $tabLinks = $tabs.find('a');
+
+        $tabLinks.on('click', function onClickTab() {
+          $tabs.removeClass('active');
+          $tabs.attr('aria-selected', false);
+
+          $(this).parent().addClass('active');
+          $(this).parent().attr('aria-selected', true);
+        });
+      } else {
+        $tabs.on('click', function onClickTab() {
+          $tabs.removeClass('active');
+          $tabs.attr('aria-selected', false);
+
+          $(this).addClass('active');
+          $(this).attr('aria-selected', true);
+        });
+      }
+    };
+
+    initExampleTabs();
+  });
+</script>

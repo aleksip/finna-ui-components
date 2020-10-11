@@ -1,0 +1,96 @@
+<?= $this->render('components/organisms/navigation/finna-multi-level-nav/finna-multi-level-nav.phtml',
+  [
+    'ariaLabel' => 'Ohjenavigaatio',
+    'ariaLabelPrimary' => 'Ohjenavigaatio taso 1',
+    'ariaLabelSecondary' => 'Ohjenavigaatio taso 2',
+    'collapseId' => 'nav-help-collapse',
+    'items' => [
+      [
+        'active' => true,
+        'children' => [
+          [
+            'id' => 'search',
+            'label' => 'Haun pikaohje',
+            'link' => '',
+          ],
+          [
+            'id' => 'search-basic',
+            'label' => 'Perushaun ohje',
+            'link' => '',
+          ],
+          [
+            'id' => 'search-advanced',
+            'label' => 'Tarkennetun haun ohje',
+            'link' => '',
+          ],
+        ],
+        'id' => 'search-main',
+        'label' => 'Hakuohjeet',
+      ],
+      [
+        'children' => [
+          [
+            'id' => 'account-advice',
+            'label' => 'Neuvoja kirjautumiseen',
+            'link' => '',
+          ],
+          [
+            'id' => 'account-management',
+            'label' => 'Oman tilin hallinta',
+            'link' => '',
+          ],
+        ],
+        'id' => 'account-main',
+        'label' => 'Kirjautuminen ja oma tili',
+      ],
+      [
+        'id' => 'favourites',
+        'label' => 'Suosikkilistat',
+        'link' => '',
+      ],
+      [
+        'id' => 'material-main',
+        'label' => 'Aineistojen käyttö',
+        'children' => [
+          [
+            'id' => 'material-usage',
+            'label' => 'Aineistojen käyttö',
+            'link' => '',
+          ],
+          [
+            'id' => 'material-licenses',
+            'label' => 'CC-lisenssit',
+            'link' => '',
+          ],
+        ]
+      ],
+      [
+        'id' => 'videos-main',
+        'label' => 'Video-ohjeet',
+        'children' => [
+          [
+            'id' => 'videos-search',
+            'label' => 'Haun tekeminen Finna.fi:ssä',
+            'link' => '',
+          ],
+          [
+            'id' => 'videos-favourites',
+            'label' => 'Suosikkilistojen luonti',
+            'link' => '',
+          ],
+          [
+            'id' => 'videos-account',
+            'label' => 'Kirjautuminen ja oma tilin hallinta',
+            'link' => '',
+          ],
+          [
+            'id' => 'videos-library-card',
+            'label' => 'Kirjastokortin liittäminen Finna-tiliin',
+            'link' => '',
+          ],
+        ]
+      ],
+    ],
+    'activeTab' => 'videos-favourites',
+  ]
+);

@@ -1,0 +1,23 @@
+<?= $this->render('components/molecules/navigation/finna-nav-tabs/finna-nav-tabs.phtml', [
+    'additionalClasses' => $additionalClasses,
+    'ariaLabel' => $ariaLabel,
+    'tabs' => $tabs
+  ]) ?>
+<script type="text/javascript">
+  $(document).ready(function onSecondaryTabsReady() {
+    var initExampleSecondaryTabs = function() {
+      var $tablist = $('.js-tablist-secondary-example');
+      var $tabs = $tablist.find('li');
+
+      $tabs.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.attr('aria-selected', false);
+
+        $(this).addClass('active');
+        $(this).attr('aria-selected', true);
+      });
+    }
+
+    initExampleSecondaryTabs();
+  });
+</script>

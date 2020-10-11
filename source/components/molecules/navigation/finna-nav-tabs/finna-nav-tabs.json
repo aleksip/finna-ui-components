@@ -1,0 +1,21 @@
+{
+  "ariaLabel": "Finna nav tabs",
+  "tabs": [
+    {
+      "active": true,
+      "id": "tab1",
+      "label": "Example tab 1",
+      "link": "#",
+    },
+    {
+      "id": "tab2",
+      "label": "Example tab 2",
+      "link": "#"
+    },
+    {
+      "id": "tab3",
+      "label": "Example tab 3",
+      "link": "#"
+    }
+  ]
+}

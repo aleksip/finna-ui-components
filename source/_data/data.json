@@ -20,24 +20,6 @@
   "value": "This is a value",
   "selectOptions": ["This is option 1", "This is option 2", "This is option 3"],
   "groupName": "Radio button group",
-  "tabs": [
-    {
-      "name": "Example tab 1",
-      "id": "tab1",
-      "href": "#",
-      "active": true
-    },
-    {
-      "name": "Example tab 2",
-      "id": "tab2",
-      "href": "#"
-    },
-    {
-      "name": "Example tab 3",
-      "id": "tab3",
-      "href": "#"
-    }
-  ],
   "inputError": "Please fill out this field",
   "inputCheckboxError": "Please check this field",
   "submit": "Submit",

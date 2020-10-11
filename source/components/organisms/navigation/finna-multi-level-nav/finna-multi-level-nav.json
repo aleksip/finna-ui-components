@@ -1,0 +1,52 @@
+{
+  "ariaLabel": "Finna navigation",
+  "ariaLabelPrimary": "Finna primary navigation",
+  "ariaLabelSecondary": "Finna secondary navigation",
+  "collapseId": "finna-multi-level-nav-collapse",
+  "items": [
+    {
+      "label": "Primary tab 1",
+      "id": "tab1",
+      "link": "#",
+      "active": true,
+      "children": [
+        {
+          "label": "Secondary tab 1",
+          "id": "secondaryTab1",
+          "link": "#",
+          "active": true
+        },
+        {
+          "label": "Secondary tab 2",
+          "id": "secondaryTab2",
+          "link": "#"
+        },
+        {
+          "label": "Secondary tab 3",
+          "id": "secondaryTab3",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "label": "Primary tab 2",
+      "id": "tab2",
+      "link": "#"
+    },
+    {
+      "label": "Primary tab 3",
+      "id": "tab3",
+      "link": "#"
+    },
+    {
+      "label": "Primary tab 4",
+      "id": "tab4",
+      "link": "#"
+    },
+    {
+      "label": "Primary tab 5",
+      "id": "tab5",
+      "link": "#"
+    }
+  ]
+}
