@@ -1,6 +1,6 @@
 ---
 title: Navbar
-state: inprogress
+state: inreview
 ---
 
 ### Description
@@ -13,7 +13,7 @@ Navbars are responsive meta components that serve as navigation headers for your
 | ------------------ | -------- | ------------------------ | -------- |
 | additionalClasses  | `string` | `visible-xs`             | No       |
 | ariaLabel          | `string` | Finna navigation         | Yes      |
-| brandContent       | `string` | Brand content            | No       |
+| brandContent       | `string` | Brand content            | Yes      |
 | brandLink          | `string` |                          | No       |
 | brandSrOnly        | `string` |                          | No       |
 | collapseContent    | `string` | A rendered nav component | Yes      |

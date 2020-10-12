@@ -1,6 +1,6 @@
 ---
 title: Nav tabs
-state: inprogress
+state: inreview
 ---
 
 ### Description

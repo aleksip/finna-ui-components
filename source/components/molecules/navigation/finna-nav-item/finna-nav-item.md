@@ -1,6 +1,6 @@
 ---
 title: Nav item
-state: inprogress
+state: inreview
 ---
 
 ### Description
