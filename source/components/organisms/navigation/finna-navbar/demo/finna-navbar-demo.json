@@ -1,0 +1,40 @@
+{
+  "additionalClasses": "",
+  "ariaLabel": "Navbar demo",
+  "brandContent": "Navbar demo",
+  "brandLink": "#",
+  "brandSrOnly": "",
+  "collapseId": "finna-navbar-collapse",
+  "toggleBtnIconClass": "fa-handle-open",
+  "toggleBtnSrOnly": "More",
+  "collapseContentItems": [
+    {
+      "label": "Item 1",
+      "link": "#"
+    },
+    {
+      "label": "Item 2 with subitems",
+      "link": "#",
+      "active": true,
+      "children": [
+        {
+          "label": "Subitem 1",
+          "link": "#",
+          "active": true
+        },
+        {
+          "label": "Subitem 2",
+          "link": "#"
+        },
+        {
+          "label": "Subitem 3",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "label": "Item 3",
+      "link": "#"
+    }
+  ]
+}
