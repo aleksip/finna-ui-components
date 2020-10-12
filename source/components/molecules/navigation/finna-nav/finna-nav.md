@@ -1,8 +1,13 @@
-#### Description
+---
+title: Nav
+state: inprogress
+---
+
+### Description
 
 Basic list of navigation items.
 
-#### Properties
+### Properties
 
 | Property          | Type     | Example value                  | Required |
 | ----------------- | -------- | ------------------------------ | -------- |

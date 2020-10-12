@@ -7,5 +7,5 @@
   "collapseContent": "<p>Collapse content</p>",
   "collapseId": "finna-navbar-collapse",
   "toggleBtnIconClass": "fa-handle-open",
-  "toggleBtnSrOnly": ""
+  "toggleBtnSrOnly": "More"
 }
