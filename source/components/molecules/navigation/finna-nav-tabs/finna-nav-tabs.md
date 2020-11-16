@@ -17,4 +17,6 @@ A tabbed navigation bar that supports an optional tab-specific tooltip button.
 
 ### Variations
 
+Add the `finna-nav-tabs-lg` class for a larger variation.
+
 Add the `finna-nav-tabs-secondary` class for a less prominent secondary style.
