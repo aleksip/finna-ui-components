@@ -5,47 +5,39 @@
   "collapseId": "finna-multi-level-nav-collapse",
   "items": [
     {
-      "label": "Primary tab 1",
-      "id": "tab1",
-      "link": "#",
       "active": true,
+      "label": "Primary 1",
+      "link": "#",
       "children": [
         {
-          "label": "Secondary tab 1",
-          "id": "secondaryTab1",
+          "active": true,
+          "label": "Secondary 1",
           "link": "#",
-          "active": true
         },
         {
-          "label": "Secondary tab 2",
-          "id": "secondaryTab2",
+          "label": "Secondary 2",
           "link": "#"
         },
         {
-          "label": "Secondary tab 3",
-          "id": "secondaryTab3",
+          "label": "Secondary 3",
           "link": "#"
         }
       ]
     },
     {
-      "label": "Primary tab 2",
-      "id": "tab2",
+      "label": "Primary 2",
       "link": "#"
     },
     {
-      "label": "Primary tab 3",
-      "id": "tab3",
+      "label": "Primary 3",
       "link": "#"
     },
     {
-      "label": "Primary tab 4",
-      "id": "tab4",
+      "label": "Primary 4",
       "link": "#"
     },
     {
-      "label": "Primary tab 5",
-      "id": "tab5",
+      "label": "Primary 5",
       "link": "#"
     }
   ]

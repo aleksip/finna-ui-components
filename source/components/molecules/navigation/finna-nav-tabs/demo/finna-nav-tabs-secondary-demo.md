@@ -1,5 +1,5 @@
 ---
-title: Nav tabs secondary demo
+title: Nav tabs - Demo - Secondary level variation
 state: demo
 ---
 

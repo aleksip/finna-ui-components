@@ -1,3 +1,3 @@
 ---
-title: Large multi-level navigation variation
+title: Multi-level navigation - Large variation
 ---

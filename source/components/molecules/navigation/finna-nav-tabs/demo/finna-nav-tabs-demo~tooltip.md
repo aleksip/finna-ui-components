@@ -1,5 +1,5 @@
 ---
-title: Nav tabs tooltip demo
+title: Nav tabs - Demo - Tooltip
 state: demo
 ---
 

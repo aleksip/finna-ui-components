@@ -1,12 +1,12 @@
 {
   "additionalClasses": "",
   "ariaLabel": "Navbar demo",
-  "brandContent": "Navbar demo",
+  "brandContent": "Demo navbar",
   "brandLink": "#",
   "brandSrOnly": "",
   "collapseId": "finna-navbar-collapse",
   "toggleBtnIconClass": "fa-handle-open",
-  "toggleBtnSrOnly": "More",
+  "toggleBtnLabel": "More",
   "collapseContentItems": [
     {
       "label": "Item 1",

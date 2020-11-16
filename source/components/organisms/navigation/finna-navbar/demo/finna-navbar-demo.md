@@ -1,4 +1,4 @@
 ---
-title: Navbar demo
+title: Navbar - Demo
 state: demo
 ---

@@ -9,11 +9,11 @@ A tabbed navigation bar that supports an optional tab-specific tooltip button.
 
 ### Properties
 
-| Property          | Type       | Example value                   | Required |
-| ----------------- | ---------- | ------------------------------- | -------- |
-| additionalClasses | `string`   | `finna-nav-tabs-secondary`      | No       |
-| ariaLabel         | `string`   | Finna main tabs                 | Yes      |
-| tabs              | `[]`       | Array of finna-nav-item arrays  | Yes      |
+| Property            | Type   | Example value                   | Required |
+| ------------------- | ------ | ------------------------------- | -------- |
+| `additionalClasses` | string | `finna-nav-tabs-secondary`      | No       |
+| `ariaLabel`         | string | Finna main tabs                 | Yes      |
+| `tabs`              | array  | Array of finna-nav-item arrays  | Yes      |
 
 ### Variations
 

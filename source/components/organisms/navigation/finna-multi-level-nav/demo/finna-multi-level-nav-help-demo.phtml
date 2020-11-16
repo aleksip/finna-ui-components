@@ -1,6 +1,6 @@
 <?= $this->render('components/organisms/navigation/finna-multi-level-nav/finna-multi-level-nav.phtml',
   [
-    'additionalClasses' => 'finna-multi-level-nav-lg',
+    'additionalClasses' => 'finna-multi-level-nav-content finna-multi-level-nav-lg',
     'ariaLabel' => 'Ohjenavigaatio',
     'ariaLabelPrimary' => 'Ohjenavigaatio taso 1',
     'ariaLabelSecondary' => 'Ohjenavigaatio taso 2',
@@ -10,88 +10,73 @@
         'active' => true,
         'children' => [
           [
-            'id' => 'search',
+            'active' => true,
             'label' => 'Haun pikaohje',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'search-basic',
             'label' => 'Perushaun ohje',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'search-advanced',
             'label' => 'Tarkennetun haun ohje',
-            'link' => '',
+            'link' => '#',
           ],
         ],
-        'id' => 'search-main',
         'label' => 'Hakuohjeet',
       ],
       [
         'children' => [
           [
-            'id' => 'account-advice',
             'label' => 'Neuvoja kirjautumiseen',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'account-management',
             'label' => 'Oman tilin hallinta',
-            'link' => '',
+            'link' => '#',
           ],
         ],
-        'id' => 'account-main',
         'label' => 'Kirjautuminen ja oma tili',
       ],
       [
-        'id' => 'favourites',
         'label' => 'Suosikkilistat',
-        'link' => '',
+        'link' => '#',
       ],
       [
-        'id' => 'material-main',
         'label' => 'Aineistojen käyttö',
         'children' => [
           [
-            'id' => 'material-usage',
             'label' => 'Aineistojen käyttö',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'material-licenses',
             'label' => 'CC-lisenssit',
-            'link' => '',
+            'link' => '#',
           ],
         ]
       ],
       [
-        'id' => 'videos-main',
         'label' => 'Video-ohjeet',
         'children' => [
           [
-            'id' => 'videos-search',
             'label' => 'Haun tekeminen Finna.fi:ssä',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'videos-favourites',
             'label' => 'Suosikkilistojen luonti',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'videos-account',
             'label' => 'Kirjautuminen ja oma tilin hallinta',
-            'link' => '',
+            'link' => '#',
           ],
           [
-            'id' => 'videos-library-card',
             'label' => 'Kirjastokortin liittäminen Finna-tiliin',
-            'link' => '',
+            'link' => '#',
           ],
         ]
       ],
     ],
-    'activeTab' => 'videos-favourites',
+    'toggleBtnLabel' => 'Lisää'
   ]
 );
