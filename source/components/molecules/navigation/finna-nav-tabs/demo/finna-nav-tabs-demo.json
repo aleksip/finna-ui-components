@@ -2,7 +2,7 @@
   "tooltipDemo": false,
   "additionalClasses": "js-tablist-example",
   "ariaLabel": "Finna nav tabs",
-  "tabs": [
+  "items": [
     {
       "label": "Example tab 1",
       "link": "#",

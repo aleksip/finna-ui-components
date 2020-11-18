@@ -1,7 +1,7 @@
 {
   "additionalClasses": "finna-nav-tabs-secondary js-tablist-secondary-example",
   "ariaLabel": "Finna secondary tabs",
-  "tabs": [
+  "items": [
     {
       "label": "Example tab 1",
       "link": "#",

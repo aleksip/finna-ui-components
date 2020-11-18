@@ -1,6 +1,6 @@
 {
   "ariaLabel": "Finna nav tabs",
-  "tabs": [
+  "items": [
     {
       "active": true,
       "id": "tab1",

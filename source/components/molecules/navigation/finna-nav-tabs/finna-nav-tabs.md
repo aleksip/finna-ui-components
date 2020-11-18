@@ -13,7 +13,7 @@ A tabbed navigation bar that supports an optional tab-specific tooltip button.
 | ------------------- | ------ | ------------------------------- | -------- |
 | `additionalClasses` | string | `finna-nav-tabs-secondary`      | No       |
 | `ariaLabel`         | string | Finna main tabs                 | Yes      |
-| `tabs`              | array  | Array of finna-nav-item arrays  | Yes      |
+| `items`             | array  | Array of finna-nav-item arrays  | Yes      |
 
 ### Variations
 
