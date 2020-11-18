@@ -9,7 +9,7 @@
 ?>
 <li<?php if (!empty($id)): ?> id="<?= $id ?>"<?php endif; ?>
   <?php if (!empty($classes)): ?> class="<?= implode(' ', $classes) ?>"<?php endif; ?>
-  <?php if (empty($children)): ?> aria-selected="<?= $active ?>"<?php endif; ?>>
+  <?php if (!empty($ariaSelected)): ?> aria-selected="<?= $ariaSelected ?>"<?php endif; ?>>
   <?php if (empty($children)): ?>
     <a href="<?= $link ?? '#' ?>"><?= $label ?></a>
     <?php if (!empty($tooltipBtn)): ?>
