@@ -30,13 +30,13 @@
   <?= $this->render('components/molecules/navigation/finna-nav-tabs/finna-nav-tabs.phtml', [
       'additionalClasses' => implode(' ', $navTabsClasses),
       'ariaLabel' => (empty($tabsSecondary) ? $ariaLabel: $ariaLabelPrimary),
-      'tabs' => $tabsPrimary,
+      'items' => $tabsPrimary,
     ]); ?>
   <?php if (!empty($tabsSecondary)): ?>
     <?= $this->render('components/molecules/navigation/finna-nav-tabs/finna-nav-tabs.phtml', [
         'additionalClasses' => 'finna-nav-tabs-secondary ' . implode(' ', $navTabsClasses),
         'ariaLabel' => $ariaLabelSecondary,
-        'tabs' => $tabsSecondary,
+        'items' => $tabsSecondary,
       ]); ?>
   <?php endif; ?>
   <?= $this->render('components/organisms/navigation/finna-navbar/finna-navbar.phtml', [
