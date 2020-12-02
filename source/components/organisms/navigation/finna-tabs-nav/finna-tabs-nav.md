@@ -1,11 +1,11 @@
 ---
-title: Nav tabs
+title: Tabs nav
 state: inreview
 ---
 
 ### Description
 
-A tabbed navigation bar that supports an optional tab-specific tooltip button.
+Tabbed navigation bar that will also show the active tab's children.
 
 ### Properties
 
@@ -17,6 +17,4 @@ A tabbed navigation bar that supports an optional tab-specific tooltip button.
 
 ### Variations
 
-Add the `finna-nav-tabs-lg` class for a larger variation.
-
-Add the `finna-nav-tabs-secondary` class for a less prominent secondary style.
+Add the `finna-tabs-nav-lg` class for a larger variation.

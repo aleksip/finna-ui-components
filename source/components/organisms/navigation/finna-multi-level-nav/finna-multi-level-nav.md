@@ -5,8 +5,8 @@ state: inreview
 
 ### Description
 
-Multi-level navigation. Two sets of navigation tabs for larger screens and a
-navbar for small screens.
+Multi-level navigation. Tabbed navigation bar for large screens and a navbar for 
+small screens.
 
 ### Properties
 
@@ -14,8 +14,9 @@ navbar for small screens.
 | ---------------------| ------ | ---------------------------- | -------- |
 | `additionalClasses`  | string | `finna-multi-level-nav`      | No       |
 | `ariaLabel`          | string | Finna navigation             | Yes      |
-| `ariaLabelPrimary`   | string | Finna primary navigation     | Yes      |
-| `ariaLabelSecondary` | string | Finna secondary navigation   | Yes      |
+| `brandContent`       | string | Brand content                | Yes      |
+| `brandLink`          | string |                              | No       |
+| `collapseId`         | string | `finna-navbar-collapse`      | Yes      |
 | `items`              | array  |                              | Yes      |
 
 Additionally all finna-navbar properties except `additionalClasses`,

@@ -1,5 +1,5 @@
 ---
-title: Nav tabs - Demo
+title: Tabs nav - Demo
 state: demo
 ---
 

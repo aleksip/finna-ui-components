@@ -1,32 +1,31 @@
 {
-  "tooltipDemo": true,
   "additionalClasses": "js-tablist-tooltip-example",
-  "ariaLabel": "Finna nav tabs",
+  "ariaLabel": "Finna tabs nav",
   "items": [
     {
       "active": true,
-      "label": "Example tab 1 with tooltip",
+      "label": "Item 1 with tooltip",
       "link": "#",
       "tooltipBtn": {
-        "ariaLabel": "Help - Example tab 1",
+        "ariaLabel": "Help - Item 1",
         "content": "<h4>Tab 1 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
         "iconClass": "fa-info-big"
       }
     },
     {
-      "label": "Example tab 2 with tooltip",
+      "label": "Item 2 with tooltip",
       "link": "#",
       "tooltipBtn": {
-        "ariaLabel": "Help - Example tab 2",
+        "ariaLabel": "Help - Item 2",
         "content": "<h4>Tab 2 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
         "iconClass": "fa-info-big"
       }
     },
     {
-      "label": "Example tab 3 with tooltip",
+      "label": "Item 3 with tooltip",
       "link": "#",
       "tooltipBtn": {
-        "ariaLabel": "Help - Example tab 3",
+        "ariaLabel": "Help - Item 3",
         "content": "<h4>Tab 3 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
         "iconClass": "fa-info-big"
       }

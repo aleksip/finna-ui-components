@@ -1,44 +1,63 @@
 {
   "ariaLabel": "Finna navigation",
-  "ariaLabelPrimary": "Finna primary navigation",
-  "ariaLabelSecondary": "Finna secondary navigation",
+  "brandContent": "Secondary item 1.1",
   "collapseId": "finna-multi-level-nav-collapse",
   "items": [
     {
       "active": true,
-      "label": "Primary 1",
+      "label": "Primary item 1",
       "link": "#",
       "children": [
         {
           "active": true,
-          "label": "Secondary 1",
-          "link": "#",
-        },
-        {
-          "label": "Secondary 2",
+          "label": "Secondary item 1.1",
           "link": "#"
         },
         {
-          "label": "Secondary 3",
+          "label": "Secondary item 1.2",
+          "link": "#"
+        },
+        {
+          "label": "Secondary item 1.3",
           "link": "#"
         }
       ]
     },
     {
-      "label": "Primary 2",
-      "link": "#"
+      "label": "Primary item 2",
+      "link": "#",
+      "children": [
+        {
+          "label": "Secondary item 2.1",
+          "link": "#"
+        },
+        {
+          "label": "Secondary item 2.2",
+          "link": "#"
+        },
+        {
+          "label": "Secondary item 2.3",
+          "link": "#"
+        }
+      ]
     },
     {
-      "label": "Primary 3",
-      "link": "#"
-    },
-    {
-      "label": "Primary 4",
-      "link": "#"
-    },
-    {
-      "label": "Primary 5",
-      "link": "#"
+      "label": "Primary item 3",
+      "link": "#",
+      "children": [
+        {
+          "label": "Secondary item 3.1",
+          "link": "#"
+        },
+        {
+          "label": "Secondary item 3.2",
+          "link": "#"
+        },
+        {
+          "label": "Secondary item 3.3",
+          "link": "#"
+        }
+      ]
     }
   ]
 }

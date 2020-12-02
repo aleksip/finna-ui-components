@@ -1,19 +1,18 @@
 {
-  "tooltipDemo": false,
   "additionalClasses": "js-tablist-example",
-  "ariaLabel": "Finna nav tabs",
+  "ariaLabel": "Finna tabs nav",
   "items": [
     {
-      "label": "Example tab 1",
+      "label": "Item 1",
       "link": "#",
       "active": true
     },
     {
-      "label": "Example tab 2",
+      "label": "Item 2",
       "link": "#"
     },
     {
-      "label": "Example tab 3",
+      "label": "Item 3",
       "link": "#"
     }
   ]
