@@ -1,6 +1,6 @@
 ---
 title: Tabs nav
-state: inreview
+state: complete
 ---
 
 ### Description

@@ -1,6 +1,6 @@
 ---
 title: Tooltip button
-state: inreview
+state: complete
 ---
 
 ### Description

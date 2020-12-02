@@ -1,6 +1,6 @@
 ---
 title: Navbar
-state: inreview
+state: complete
 ---
 
 ### Description
