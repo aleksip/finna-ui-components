@@ -1,4 +1,6 @@
 {
-  "additionalClasses": "finna-navbar-content",
+  "attributes": {
+    "class": "finna-navbar-content"
+  },
   "brandContent": "Content navbar"
 }

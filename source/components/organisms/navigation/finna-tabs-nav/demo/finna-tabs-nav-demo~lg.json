@@ -1,3 +1,5 @@
 {
-  "additionalClasses": "finna-tabs-nav-lg"
+  "attributes": {
+    "class": "finna-tabs-nav-lg"
+  }
 }

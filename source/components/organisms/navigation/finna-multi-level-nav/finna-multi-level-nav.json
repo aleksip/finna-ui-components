@@ -4,7 +4,6 @@
   "collapseId": "finna-multi-level-nav-collapse",
   "items": [
     {
-      "active": true,
       "label": "Primary item 1",
       "link": "#",
       "children": [

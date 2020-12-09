@@ -1,65 +1,37 @@
 {
-  "additionalClasses": "navbar-default",
   "ariaLabel": "Demo navbar",
-  "brandContent": "Demo navbar",
+  "attributes": {
+    "class": "navbar-default"
+  },
+  "brandContent": "Brand",
   "brandLink": "#",
-  "brandSrOnly": "",
   "collapseId": "finna-navbar-collapse",
   "toggleBtnIconClass": "fa-handle-open",
   "toggleBtnLabel": "More",
   "collapseContentItems": [
     {
       "active": true,
-      "label": "Primary item 1",
+      "label": "Link",
       "link": "#",
-      "children": [
-        {
-          "active": true,
-          "label": "Secondary item 1.1",
-          "link": "#"
-        },
-        {
-          "label": "Secondary item 1.2",
-          "link": "#"
-        },
-        {
-          "label": "Secondary item 1.3",
-          "link": "#"
-        }
-      ]
     },
     {
-      "label": "Primary item 2",
+      "label": "Link",
       "link": "#",
-      "children": [
-        {
-          "label": "Secondary item 2.1",
-          "link": "#"
-        },
-        {
-          "label": "Secondary item 2.2",
-          "link": "#"
-        },
-        {
-          "label": "Secondary item 2.3",
-          "link": "#"
-        }
-      ]
     },
     {
-      "label": "Primary item 3",
+      "label": "Dropdown",
       "link": "#",
       "children": [
         {
-          "label": "Secondary item 3.1",
+          "label": "Action",
           "link": "#"
         },
         {
-          "label": "Secondary item 3.2",
+          "label": "Another action",
           "link": "#"
         },
         {
-          "label": "Secondary item 3.3",
+          "label": "Something else here",
           "link": "#"
         }
       ]

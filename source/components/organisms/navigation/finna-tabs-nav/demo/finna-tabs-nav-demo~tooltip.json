@@ -1,10 +1,12 @@
 {
-  "additionalClasses": "js-tablist-tooltip-example",
   "ariaLabel": "Finna tabs nav",
+  "attributes": {
+    "class": "js-tablist-tooltip-example"
+  },
   "items": [
     {
       "active": true,
-      "label": "Item 1 with tooltip",
+      "label": "Item 1",
       "link": "#",
       "tooltipBtn": {
         "ariaLabel": "Help - Item 1",
@@ -13,7 +15,7 @@
       }
     },
     {
-      "label": "Item 2 with tooltip",
+      "label": "Item 2",
       "link": "#",
       "tooltipBtn": {
         "ariaLabel": "Help - Item 2",
@@ -22,7 +24,7 @@
       }
     },
     {
-      "label": "Item 3 with tooltip",
+      "label": "Item 3",
       "link": "#",
       "tooltipBtn": {
         "ariaLabel": "Help - Item 3",

@@ -11,8 +11,8 @@ Tabbed navigation bar that will also show the active tab's children.
 
 | Property            | Type   | Example value                   | Required |
 | ------------------- | ------ | ------------------------------- | -------- |
-| `additionalClasses` | string | `finna-nav-tabs-secondary`      | No       |
 | `ariaLabel`         | string | Finna main tabs                 | Yes      |
+| `attributes`        | array  |                                 | No       |
 | `items`             | array  | Array of finna-nav-item arrays  | Yes      |
 
 ### Variations

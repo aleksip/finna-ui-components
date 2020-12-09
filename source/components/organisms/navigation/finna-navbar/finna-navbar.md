@@ -13,9 +13,9 @@ and become horizontal as the available viewport width increases.
 
 | Property             | Type   | Example value            | Required |
 | -------------------- | ------ | ------------------------ | -------- |
-| `additionalClasses`  | string | `visible-xs`             | No       |
 | `ariaLabel`          | string | Finna navigation         | Yes      |
-| `brandContent`       | string | Brand content            | Yes      |
+| `attributes`         | array  |                          | No       |
+| `brandContent`       | string | Brand content            | No       |
 | `brandLink`          | string |                          | No       |
 | `brandSrOnly`        | string |                          | No       |
 | `collapseContent`    | string | A rendered nav component | Yes      |

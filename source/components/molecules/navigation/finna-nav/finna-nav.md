@@ -12,11 +12,9 @@ children.
 
 | Property            | Type   | Example value                  | Required |
 | ------------------- | ------ | ------------------------------ | -------- |
-| `additionalClasses` | string | `navbar-nav language`          | No       |
-| `ariaLabel`         | string | Select language                | No       |
+| `attributes`        | array  |                                | No       |
 | `items`             | array  | Array of finna-nav-item arrays | Yes      |
 | `renderChildren`    | string | `dropdown`                     | No       |
-| `role`              | string | `menubar`                      | No       |
 
 ### Notes
 

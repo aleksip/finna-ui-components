@@ -3,17 +3,14 @@
   "items": [
     {
       "active": true,
-      "id": "tab1",
       "label": "Item 1",
       "link": "#",
     },
     {
-      "id": "tab2",
       "label": "Item 2",
       "link": "#"
     },
     {
-      "id": "tab3",
       "label": "Item 3",
       "link": "#"
     }

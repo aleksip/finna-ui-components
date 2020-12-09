@@ -12,12 +12,12 @@ Navigation item with optional tooltip button and children.
 | Property         | Type    | Example value                  | Required |
 | ---------------- | ------- | ------------------------------ | -------- |
 | `active`         | boolean | `true`                         | No       |
-| `ariaSelected`   | boolean | `true`                         | No       |
+| `attributes`     | array   |                                | No       |
 | `children`       | array   | Array of finna-nav-item arrays | No       |
 | `description`    | string  | Additional description         | No       |
-| `id`             | string  | `tab-special`                  | No       |
-| `label`          | string  | Tab label                      | Yes      |
+| `label`          | string  | Item label                     | Yes      |
 | `link`           | string  | `https://finna.fi`             | Yes/No   |
+| `linkAttributes` | array   |                                | No       |
 | `renderChildren` | string  | `dropdown`                     | No       |
 | `tooltipBtn`     | array   | finna-tooltip-btn array        | No       |
 

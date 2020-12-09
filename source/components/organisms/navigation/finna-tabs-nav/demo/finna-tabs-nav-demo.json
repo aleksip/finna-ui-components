@@ -1,6 +1,8 @@
 {
-  "additionalClasses": "js-tablist-example",
   "ariaLabel": "Finna tabs nav",
+  "attributes": {
+    "class": "js-tablist-example"
+  },
   "items": [
     {
       "label": "Item 1",

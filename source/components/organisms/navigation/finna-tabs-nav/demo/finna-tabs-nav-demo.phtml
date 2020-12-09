@@ -1,7 +1,7 @@
 <?= $this->render('components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.phtml', [
     'ariaLabel' => $ariaLabel,
+    'attributes' => $attributes,
     'items' => $items,
-    'additionalClasses' => $additionalClasses
   ]); ?>
 <script type="text/javascript">
   $(document).ready(function onTabsReady() {
@@ -11,6 +11,7 @@
       var $tabLinks = $tabs.find('a');
       $tabLinks.on('click', function onClickTab() {
         $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
         $tabs.attr('aria-selected', false);
         $(this).parent().addClass('active');
         $(this).parent().attr('aria-selected', true);
