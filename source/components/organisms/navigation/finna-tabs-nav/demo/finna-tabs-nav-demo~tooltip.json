@@ -1,0 +1,36 @@
+{
+  "ariaLabel": "Finna tabs nav",
+  "attributes": {
+    "class": "js-tablist-tooltip-example"
+  },
+  "items": [
+    {
+      "active": true,
+      "label": "Item 1",
+      "link": "#",
+      "tooltipBtn": {
+        "ariaLabel": "Help - Item 1",
+        "content": "<h4>Tab 1 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
+        "iconClass": "fa-info-big"
+      }
+    },
+    {
+      "label": "Item 2",
+      "link": "#",
+      "tooltipBtn": {
+        "ariaLabel": "Help - Item 2",
+        "content": "<h4>Tab 2 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
+        "iconClass": "fa-info-big"
+      }
+    },
+    {
+      "label": "Item 3",
+      "link": "#",
+      "tooltipBtn": {
+        "ariaLabel": "Help - Item 3",
+        "content": "<h4>Tab 3 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>",
+        "iconClass": "fa-info-big"
+      }
+    }
+  ]
+}

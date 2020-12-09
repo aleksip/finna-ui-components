@@ -1,0 +1,35 @@
+<?php
+  $attributes = $attributes ?? [];
+  $attributes['class'] = (array)($attributes['class'] ?? []);
+  $attributes['class'][] = 'finna-multi-level-nav';
+  $tabsNavAttributes = ['class' => ['hidden-xs']];
+  $navbarAttributes = ['class' => ['visible-xs']];
+  if (in_array('finna-multi-level-nav-lg', $attributes['class'])) {
+    $tabsNavAttributes['class'][] = 'finna-tabs-nav-lg';
+  }
+  if (in_array('finna-multi-level-nav-content', $attributes['class'])) {
+    $navbarAttributes['class'][] = 'finna-navbar-content';
+  }
+?>
+<div<?= $this->attributes($attributes) ?>>
+  <?= $this->render('components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.phtml', [
+      'ariaLabel' => $ariaLabel,
+      'attributes' => $tabsNavAttributes,
+      'items' => $items,
+    ]); ?>
+  <?= $this->render('components/organisms/navigation/finna-navbar/finna-navbar.phtml', [
+      'ariaLabel' => $ariaLabel,
+      'attributes' => $navbarAttributes,
+      'brandContent' => $brandContent ?? $activeLabel ?? '',
+      'brandLink' => $brandLink ?? null,
+      'brandSrOnly' => $brandSrOnly ?? null,
+      'collapseContent' => $this->render('components/molecules/navigation/finna-nav/finna-nav.phtml', [
+          'attributes' => ['class' => ['navbar-nav']],
+          'items' => $items
+        ]),
+      'collapseId' => $collapseId,
+      'toggleBtnIconClass' => $toggleBtnIconClass ?? 'fa-handle-open',
+      'toggleBtnLabel' => $toggleBtnLabel ?? null,
+      'toggleBtnSrOnly' => $toggleBtnSrOnly ?? null
+    ]); ?>
+</div>

@@ -1,0 +1,40 @@
+{
+  "ariaLabel": "Demo navbar",
+  "attributes": {
+    "class": "navbar-default"
+  },
+  "brandContent": "Brand",
+  "brandLink": "#",
+  "collapseId": "finna-navbar-collapse",
+  "toggleBtnIconClass": "fa-handle-open",
+  "toggleBtnLabel": "More",
+  "collapseContentItems": [
+    {
+      "active": true,
+      "label": "Link",
+      "link": "#",
+    },
+    {
+      "label": "Link",
+      "link": "#",
+    },
+    {
+      "label": "Dropdown",
+      "link": "#",
+      "children": [
+        {
+          "label": "Action",
+          "link": "#"
+        },
+        {
+          "label": "Another action",
+          "link": "#"
+        },
+        {
+          "label": "Something else here",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}

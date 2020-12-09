@@ -1,0 +1,29 @@
+<?php
+  $attributes = $attributes ?? [];
+  $attributes['class'] = (array)($attributes['class'] ?? []);
+  $attributes['class'][] = 'finna-navbar-component';
+  $attributes['class'][] = 'navbar';
+  $attributes['aria-label'] = $ariaLabel;
+?>
+<nav<?= $this->attributes($attributes) ?>>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#<?= $collapseId ?>" aria-expanded="false">
+        <?php if (!empty($toggleBtnSrOnly)): ?><span class="sr-only"><?= $toggleBtnSrOnly ?></span><?php endif; ?>
+        <?php if (!empty($toggleBtnLabel)): ?><?= $toggleBtnLabel ?><?php endif; ?>
+        <?php if (!empty($toggleBtnIconClass)): ?><i class="fa <?= $toggleBtnIconClass ?? '' ?>"></i><?php endif; ?>
+      </button>
+      <?php if (!empty($brandContent)): ?>
+        <span class="navbar-brand">
+          <?php if (!empty($brandLink)): ?><a href="<?= $brandLink ?>"><?php endif; ?>
+          <?php if (!empty($brandSrOnly)): ?><span class="sr-only"><?= $brandSrOnly ?></span><?php endif; ?>
+          <?= $brandContent ?>
+          <?php if (!empty($brandLink)): ?></a><?php endif; ?>
+        </span>
+      <?php endif; ?>
+    </div>
+    <div class="collapse navbar-collapse" id="<?= $collapseId ?>">
+      <?= $collapseContent ?>
+    </div>
+  </div>
+</nav>

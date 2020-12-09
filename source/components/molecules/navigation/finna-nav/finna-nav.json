@@ -1,0 +1,13 @@
+{
+  "ariaLabel": "Choose language",
+  "items": [
+    {
+      "label": "Item 1",
+      "link": "#"
+    },
+    {
+      "label": "Item 2",
+      "link": "#"
+    }
+  ]
+}

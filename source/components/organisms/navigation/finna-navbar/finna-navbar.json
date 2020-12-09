@@ -1,0 +1,12 @@
+{
+  "ariaLabel": "Finna navbar",
+  "attributes": {
+    "class": "navbar-default"
+  },
+  "brandContent": "Brand content",
+  "brandLink": "#",
+  "collapseContent": "<p>Collapse content</p>",
+  "collapseId": "finna-navbar-collapse",
+  "toggleBtnIconClass": "fa-handle-open",
+  "toggleBtnLabel": "More"
+}
