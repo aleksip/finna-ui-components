@@ -2,5 +2,6 @@
   "attributes": {
     "class": "finna-navbar-content"
   },
-  "brandContent": "Content navbar"
+  "brandContent": "Content navbar",
+  "collapseId": "finna-navbar-demo-content-collapse"
 }
