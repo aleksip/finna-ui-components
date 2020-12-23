@@ -14,7 +14,7 @@ A tooltip button with an icon and/or label.
 | `ariaLabel`         | string |                                                             | Yes/No   |
 | `attributes`        | array  |                                                             | No       |
 | `content`           | string | `<h4>Tooltip bottom</h4><p>Lorem ipsum dolor sit amet.</p>` | Yes      |
-| `iconClass`         | string | `fa-info-big`                                               | No       |
+| `iconClass`         | string | `fa fa-info-big`                                            | No       |
 | `label`             | string | Show tooltip                                                | No       |
 | `placement`         | string | `bottom` (default value)                                    | No       |
 
