@@ -5,7 +5,7 @@
   },
   "brandContent": "Brand",
   "brandLink": "#",
-  "collapseId": "finna-navbar-collapse",
+  "collapseId": "finna-navbar-demo-collapse",
   "toggleBtnIconClass": "fa-handle-open",
   "toggleBtnLabel": "More",
   "collapseContentItems": [
