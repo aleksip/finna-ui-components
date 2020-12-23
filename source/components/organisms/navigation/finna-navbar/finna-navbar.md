@@ -21,7 +21,7 @@ and become horizontal as the available viewport width increases.
 | `collapseContent`    | string | A rendered nav component | Yes      |
 | `collapseId`         | string | `finna-navbar-collapse`  | Yes      |
 | `toggleBtnSrOnly`    | string | More                     | Yes/No   |
-| `toggleBtnIconClass` | string | `fa-handle-open`         | No       |
+| `toggleBtnIconClass` | string | `fa fa-handle-open`      | No       |
 | `toggleBtnLabel`     | string |                          | No       |
 
 ### Notes
