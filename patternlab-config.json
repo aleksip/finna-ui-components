@@ -22,15 +22,15 @@
   },
   "ishViewportRange": {
     "s": [
-      240,
-      500
+      320,
+      320
     ],
     "m": [
-      500,
-      800
+      768,
+      992
     ],
     "l": [
-      800,
+      1200,
       2600
     ]
   },
@@ -43,7 +43,7 @@
   "paths": {
     "source": {
       "root": "./source/",
-      "patterns": "./source/_patterns/",
+      "patterns": "./source/components/",
       "data": "./source/_data/",
       "meta": "./source/_meta/",
       "annotations": "./source/_annotations/",
@@ -76,7 +76,8 @@
   "patternStateCascade": [
     "inprogress",
     "inreview",
-    "complete"
+    "complete",
+    "demo"
   ],
   "patternExportAll": false,
   "patternExportDirectory": "pattern_exports",
@@ -95,11 +96,12 @@
   },
   "uikits": [
     {
-      "name": "uikit-workshop",
+      "package": "@pattern-lab/uikit-workshop",
       "outputDir": "",
       "enabled": true,
       "excludedPatternStates": [],
       "excludedTags": []
     }
-  ]
+  ],
+  "patternMergeVariantArrays": false
 }

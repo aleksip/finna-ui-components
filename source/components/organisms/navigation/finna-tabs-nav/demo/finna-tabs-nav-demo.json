@@ -1,0 +1,21 @@
+{
+  "ariaLabel": "Finna tabs nav",
+  "attributes": {
+    "class": "js-tablist-example"
+  },
+  "items": [
+    {
+      "label": "Item 1",
+      "link": "#",
+      "active": true
+    },
+    {
+      "label": "Item 2",
+      "link": "#"
+    },
+    {
+      "label": "Item 3",
+      "link": "#"
+    }
+  ]
+}

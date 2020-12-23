@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "class": [
+      "finna-multi-level-nav-content",
+      "finna-multi-level-nav-lg"
+    ],
+  },
+  "collapseId": "finna-multi-level-nav-content-large-collapse",
+  "toggleBtnLabel": "More"
+}

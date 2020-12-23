@@ -1,0 +1,17 @@
+<?php
+  $attributes = $this->attributes($attributes ?? []);
+  $attributes->add('class', 'finna-tabs-nav');
+  $attributes['aria-label'] = $ariaLabel;
+  $navAttributes = $this->attributes(['class' => 'nav-tabs']);
+  if ($attributes->hasValue('class', 'finna-tabs-nav-lg')) {
+    $navAttributes->add('class', 'finna-nav-lg');
+  }
+  $this->headScript()->appendFile('components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.js');
+?>
+<nav<?= $attributes ?>>
+  <?= $this->render('components/molecules/navigation/finna-nav/finna-nav.phtml', [
+      'attributes' => $navAttributes,
+      'items' => $items,
+      'renderChildren' => 'simple'
+    ]); ?>
+</nav>

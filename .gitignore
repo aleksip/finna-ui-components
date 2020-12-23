@@ -1,5 +1,12 @@
+.DS_STORE
 node_modules/
 public/*
 pattern_exports/
 yarn.lock
 package-lock.json
+.env
+
+#Pattern Lab
+dependencyGraph.json
+source/_meta/_00-head.mustache
+source/_meta/_01-foot.mustache
