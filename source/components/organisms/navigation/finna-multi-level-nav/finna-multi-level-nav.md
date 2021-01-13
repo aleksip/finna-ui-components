@@ -10,17 +10,17 @@ small screens.
 
 ### Properties
 
-| Property             | Type   | Example value                | Required |
-| ---------------------| ------ | ---------------------------- | -------- |
-| `ariaLabel`          | string | Finna navigation             | Yes      |
-| `attributes`         | array  |                              | No       |
-| `brandContent`       | string | Brand content                | Yes      |
-| `brandLink`          | string |                              | No       |
-| `collapseId`         | string | `finna-navbar-collapse`      | Yes      |
-| `items`              | array  |                              | Yes      |
+| Property             | Type   |
+| ---------------------| ------ |
+| `ariaLabel`          | string |
+| `attributes`         | array  |
+| `brandContent`       | string |
+| `brandLink`          | string |
+| `collapseId`         | string |
+| `items`              | array  |
 
-Additionally all finna-navbar properties except `attributes`, `ariaLabel` and 
-`collapseContent`. Note that at least `collapseId` is required.  
+Additionally all finna-navbar properties except `ariaLabel`, `attributes` (these
+are used for the parent multi-level component) and `collapseContent`.
 
 ### Variations
 

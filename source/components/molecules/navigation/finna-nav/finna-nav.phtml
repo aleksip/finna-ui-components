@@ -1,10 +1,37 @@
 <?php
-  $attributes = $this->attributes($attributes ?? []);
-  $attributes->add('class', ['finna-nav', 'nav']);
+  $attributes = $this->htmlAttributes($attributes ?? []);
+  $items = $items ?? [];
+
+  // Items are processed at this point so that the active-multi-level class
+  // can be added to the parent's attributes.
+  $__activeMultiLevel = false;
+  foreach ($items as $__i => $__item) {
+    if (!empty($__item['children'])) {
+      if (!empty($__item['active'])) {
+        $__activeMultiLevel = true;
+      } else {
+        foreach ($__item['children'] as $__child) {
+          if (!empty($__child['active'])) {
+            $__activeMultiLevel = true;
+            break;
+          }
+        }
+      }
+    }
+    if (isset($ariaCurrent)) {
+      $__item['ariaCurrent'] = $ariaCurrent;
+    }
+    if (isset($renderChildren)) {
+      $__item['renderChildren'] = $renderChildren;
+    }
+    $items[$__i] = $__item;
+  }
+  if ($__activeMultiLevel) {
+    $attributes->add('class', 'active-multi-level');
+  }
 ?>
-<ul<?= $attributes ?>>
-  <?php foreach ($items as $item): ?>
-    <?php if (isset($renderChildren)) $item['renderChildren'] = $renderChildren; ?>
-    <?= $this->render('components/molecules/navigation/finna-nav-item/finna-nav-item.phtml', $item); ?>
+<ul<?= $attributes->add('class', ['finna-nav', 'nav']) ?>>
+  <?php foreach ($items as $__item): ?>
+    <?= $this->render('components/molecules/navigation/finna-nav-item/finna-nav-item.phtml', $__item); ?>
   <?php endforeach; ?>
 </ul>
