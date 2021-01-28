@@ -10,24 +10,25 @@ For those situations, try the panel component.
 
 ### Properties
 
-| Property             | Type    | Example value   | Required |
-| -------------------- | ------- | ----------------| -------- |
-| `attributes`         | array   |                 | No       |
-| `collapsible`        | boolean | `true`          | No       |
-| `collapsed`          | boolean | `false`         | No       |
-| `collapseId`         | string  | `example-panel` | Yes/No   |
-| `content`            | string  | Content         | Yes      |
-| `heading`            | string  | Heading         | Yes/No   |
-| `headingId`          | string  |                 | Yes/No   |
-| `titleHeadingLevel`  | integer | `2`             | No       |
+| Property       | Type    | Default value |
+| -------------- | ------- | ------------- |
+| `attributes`   | array   |               |
+| `collapsed`    | boolean | `true`        |
+| `collapseId`   | string  |               |
+| `content`      | string  |               |
+| `heading`      | string  |               |
+| `headingId`    | string  |               |
+| `headingLevel` | integer |               |
+| `headingTag`   | boolean | `true`        |
 
 ### Notes
 
-Setting `collapsible` to `true` will make the panel collapsible. It will also 
-make the `collapseId`, `heading` and `headingId` properties required. 
-`collapsed` has no effect unless `collapsible` is set to `true`.
+Setting `collapseId`, `heading` and `headingId` will make the panel collapsible.
 
-If a `titleHeadingLevel` (`1`-`6`) is set, `heading` will be put in a h-tag.
+`collapsed` has no effect unless the panel is collapsible.
+
+ARIA `role` and `aria-level` attributes will be added to the heading `div` if
+a `headingLevel` is set and `headingTag` is set to `false`.
 
 ### Variations
 
@@ -36,4 +37,4 @@ Bootstrap panel variations.
 
 Add the `finna-panel-default` class for the default variation.
 
-Add the `finna-panel-dark` class for a dark variation.
+Add the `finna-panel-borderless` class for a borderless variation.
