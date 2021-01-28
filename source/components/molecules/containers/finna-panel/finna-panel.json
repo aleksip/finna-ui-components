@@ -3,6 +3,6 @@
     "class": "finna-panel-default"
   },
   "heading": "Panel title",
-  "titleHeadingLevel": "2",
+  "headingLevel": "2",
   "content": "Panel content"
 }
