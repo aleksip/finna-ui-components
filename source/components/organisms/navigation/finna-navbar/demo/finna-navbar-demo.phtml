@@ -5,6 +5,7 @@
     'brandLink' => $brandLink ?? null,
     'brandSrOnly' => $brandSrOnly ?? null,
     'collapseContent' => $this->render('components/molecules/navigation/finna-nav/finna-nav.phtml', [
+        'ariaCurrent' => 'page',
         'attributes' => ['class' => ['navbar-nav']],
         'items' => $collapseContentItems
       ]),

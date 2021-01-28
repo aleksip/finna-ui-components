@@ -11,22 +11,18 @@ and become horizontal as the available viewport width increases.
 
 ### Properties
 
-| Property             | Type   | Example value            | Required |
-| -------------------- | ------ | ------------------------ | -------- |
-| `ariaLabel`          | string | Finna navigation         | Yes      |
-| `attributes`         | array  |                          | No       |
-| `brandContent`       | string | Brand content            | No       |
-| `brandLink`          | string |                          | No       |
-| `brandSrOnly`        | string |                          | No       |
-| `collapseContent`    | string | A rendered nav component | Yes      |
-| `collapseId`         | string | `finna-navbar-collapse`  | Yes      |
-| `toggleBtnSrOnly`    | string | More                     | Yes/No   |
-| `toggleBtnIconClass` | string | `fa fa-handle-open`      | No       |
-| `toggleBtnLabel`     | string |                          | No       |
-
-### Notes
-
-The `toggleBtnSrOnly` property is required if there is no `toggleBtnLabel`.
+| Property             | Type   |
+| -------------------- | ------ |
+| `ariaLabel`          | string |
+| `attributes`         | array  |
+| `brandContent`       | string |
+| `brandLink`          | string |
+| `brandSrOnly`        | string |
+| `collapseContent`    | string |
+| `collapseId`         | string |
+| `toggleBtnSrOnly`    | string |
+| `toggleBtnIconClass` | string |
+| `toggleBtnLabel`     | string |
 
 ### Variations
 

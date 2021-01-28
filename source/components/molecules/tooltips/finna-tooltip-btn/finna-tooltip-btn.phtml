@@ -1,15 +1,16 @@
 <?php
-  $attributes = $this->attributes($attributes ?? []);
-  $attributes->add('class', 'finna-tooltip-btn');
-  $attributes['type'] = 'button';
-  $attributes['data-toggle'] = 'tooltip';
-  $attributes['data-html'] = 'true';
-  $attributes['data-placement'] = $placement ?? 'bottom';
-  $attributes['data-original-title'] = $content;
-  if (empty($label)) {
+  $attributes = $this->htmlAttributes($attributes ?? []);
+  $attributes->set([
+    'type' => 'button',
+    'data-toggle' => 'tooltip',
+    'data-html' => 'true',
+    'data-placement' => $placement ?? 'bottom',
+    'data-original-title' => $content ?? ''
+  ]);
+  if (!isset($label) && isset($ariaLabel)) {
     $attributes['aria-label'] = $ariaLabel;
   }
 ?>
-<button<?= $attributes ?>>
-  <?php if ($iconClass): ?><i class="<?= $iconClass ?>"></i> <?php endif; ?><?= $label ?? '' ?>
+<button<?= $attributes->add('class', 'finna-tooltip-btn') ?>>
+  <?php if (isset($iconClass)): ?><i class="<?= $iconClass ?>"></i> <?php endif; ?><?= $label ?? '' ?>
 </button>
