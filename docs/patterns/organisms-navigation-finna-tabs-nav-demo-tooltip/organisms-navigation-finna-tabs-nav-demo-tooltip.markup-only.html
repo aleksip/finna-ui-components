@@ -1,0 +1,39 @@
+<nav class="js-tablist-tooltip-example finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 1 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 1" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 2 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 2" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 3 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 3" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>

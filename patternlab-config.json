@@ -61,15 +61,15 @@
       "styles": "./source/styles"
     },
     "public": {
-      "root": "public/",
-      "patterns": "public/patterns/",
-      "data": "public/styleguide/data/",
-      "annotations": "public/annotations/",
-      "styleguide": "public/styleguide/",
-      "js": "public/js",
-      "images": "public/images",
-      "fonts": "public/fonts",
-      "styles": "public/styles"
+      "root": "docs/",
+      "patterns": "docs/patterns/",
+      "data": "docs/styleguide/data/",
+      "annotations": "docs/annotations/",
+      "styleguide": "docs/styleguide/",
+      "js": "docs/js",
+      "images": "docs/images",
+      "fonts": "docs/fonts",
+      "styles": "docs/styles"
     }
   },
   "patternExtension": "phtml",

@@ -1,0 +1,33 @@
+<nav class="finna-tabs-nav-lg finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs finna-nav-lg finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+  
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>

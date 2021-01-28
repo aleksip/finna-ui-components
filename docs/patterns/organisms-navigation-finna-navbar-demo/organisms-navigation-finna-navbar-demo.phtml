@@ -1,0 +1,16 @@
+<?= $this->render('components/organisms/navigation/finna-navbar/finna-navbar.phtml', [
+    'ariaLabel' => $ariaLabel,
+    'attributes' => $attributes ?? null,
+    'brandContent' => $brandContent,
+    'brandLink' => $brandLink ?? null,
+    'brandSrOnly' => $brandSrOnly ?? null,
+    'collapseContent' => $this->render('components/molecules/navigation/finna-nav/finna-nav.phtml', [
+        'ariaCurrent' => 'page',
+        'attributes' => ['class' => ['navbar-nav']],
+        'items' => $collapseContentItems
+      ]),
+    'collapseId' => $collapseId,
+    'toggleBtnIconClass' => $toggleBtnIconClass ?? null,
+    'toggleBtnLabel' => $toggleBtnLabel ?? null,
+    'toggleBtnSrOnly' => $toggleBtnSrOnly ?? null
+  ]); ?>

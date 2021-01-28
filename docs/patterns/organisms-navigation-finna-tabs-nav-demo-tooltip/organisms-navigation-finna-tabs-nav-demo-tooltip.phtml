@@ -1,0 +1,22 @@
+<?= $this->render('components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.phtml', [
+    'ariaLabel' => $ariaLabel,
+    'attributes' => $attributes,
+    'items' => $items,
+  ]); ?>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>

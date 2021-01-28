@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+
+<head>
+  <title>UI Component Library Proto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="../../styles/style.min.css?1611825455362" media="all" />
+  <link rel="stylesheet" href="../../styles/patternlab/pattern-scaffolding.css?1611825455362" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css?1611825455362" media="all" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/2.5.1/jquery.mockjax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+  <script src="../../js/vendor/bootstrap.min.js"></script>
+  <script src="../../js/vendor/bootstrap-accessibility.min.js"></script>
+  <script src="../../js/vendor/global-vufind-mock.min.js"></script>
+  <script type="text/javascript" src="../../js/vendor/mockjax.min.js"></script>
+  <script type="text/javascript" src="../../js/main.min.js"></script>
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1611825455362" media="all">  <!-- End Pattern Lab -->
+</head>
+
+<body class="body">
+  <!-- Basic modal -->
+  <div id="modal" class="modal fade hidden-print" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+  
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+	
+			<div id="viewall-organisms-navigation" class="pl-c-category">
+					
+				<h2 class="pl-c-category__title">
+					<a href="../../patterns/organisms-navigation&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-organisms-navigation">Navigation</a>
+				</h2><!--end pl-c-category__title-->
+			
+				<div class="pl-c-category__description pl-c-text-passage">
+					
+				</div><!--end pl-c-category__description-->
+				
+			</div><!--end pl-c-category-->
+							<div id="organisms-finna-multi-level-nav" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-multi-level-nav&#x2F;organisms-navigation-finna-multi-level-nav.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-multi-level-nav" title="Link to Pattern">
+							Multi-level navigation
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-multi-level-nav" data-patternpartial="organisms-finna-multi-level-nav" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-multi-level-nav">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<div class="finna-multi-level-nav">
+    <nav class="hidden-xs finna-tabs-nav clearfix" aria-label="Finna navigation">
+    <ul class="nav-tabs active-multi-level finna-nav nav">
+      <li class="active-trail">
+    <a href="#">Primary item 1</a>
+  
+      <ul>
+              <li class="active" aria-current="page">
+          <a href="#"><span>Secondary item 1.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 2</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 2.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 3</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 3.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+</nav>
+    <nav class="visible-xs finna-navbar-component navbar" aria-label="Finna navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#finna-multi-level-nav-collapse" aria-expanded="false">
+                        <i class="fa fa-handle-open"></i>      </button>
+              <span class="navbar-brand">
+                              Secondary item 1.1                  </span>
+          </div>
+    <div class="collapse navbar-collapse" id="finna-multi-level-nav-collapse">
+      <ul class="navbar-nav active-multi-level finna-nav nav">
+      <li class="dropdown active-trail">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 1 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li class="active">
+          <a href="#"><span>Secondary item 1.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 2 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Secondary item 2.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 3 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Secondary item 3.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-multi-level-nav" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>Multi-level navigation. Tabbed navigation bar for large screens and a navbar for\nsmall screens.</p>\n<h3>Properties</h3>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ariaLabel</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>attributes</code></td>\n<td>array</td>\n</tr>\n<tr>\n<td><code>brandContent</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>brandLink</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>collapseId</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>items</code></td>\n<td>array</td>\n</tr>\n</tbody>\n</table>\n<p>Additionally all finna-navbar properties except <code>ariaLabel</code>, <code>attributes</code> (these\nare used for the parent multi-level component) and <code>collapseContent</code>.</p>\n<h3>Variations</h3>\n<p>Add the <code>finna-multi-level-nav-lg</code> class for a larger variation.</p>\n<p>Add the <code>finna-multi-level-nav-content</code> class for a content navigation\nvariation.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Multi-level navigation","patternPartial":"organisms-finna-multi-level-nav","patternState":"complete","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-multi-level-nav-content-large" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-multi-level-nav-content-large&#x2F;organisms-navigation-finna-multi-level-nav-content-large.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-multi-level-nav-content-large" title="Link to Pattern">
+							Multi-level navigation - Content + large variation
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-multi-level-nav-content-large" data-patternpartial="organisms-finna-multi-level-nav-content-large" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-multi-level-nav-content-large">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<div class="finna-multi-level-nav-content finna-multi-level-nav-lg finna-multi-level-nav">
+    <nav class="hidden-xs finna-tabs-nav-lg finna-tabs-nav clearfix" aria-label="Finna navigation">
+    <ul class="nav-tabs finna-nav-lg active-multi-level finna-nav nav">
+      <li class="active-trail">
+    <a href="#">Primary item 1</a>
+  
+      <ul>
+              <li class="active" aria-current="page">
+          <a href="#"><span>Secondary item 1.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 2</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 2.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 3</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 3.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+</nav>
+    <nav class="visible-xs finna-navbar-content finna-navbar-component navbar" aria-label="Finna navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#finna-multi-level-nav-content-large-collapse" aria-expanded="false">
+                More        <i class="fa fa-handle-open"></i>      </button>
+              <span class="navbar-brand">
+                              Secondary item 1.1                  </span>
+          </div>
+    <div class="collapse navbar-collapse" id="finna-multi-level-nav-content-large-collapse">
+      <ul class="navbar-nav active-multi-level finna-nav nav">
+      <li class="dropdown active-trail">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 1 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li class="active">
+          <a href="#"><span>Secondary item 1.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 2 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Secondary item 2.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Primary item 3 <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Secondary item 3.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-multi-level-nav-content-large" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>Visually styled for content page navigation and in a larger size.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Multi-level navigation - Content + large variation","patternPartial":"organisms-finna-multi-level-nav-content-large","patternState":"complete","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-navbar" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-navbar&#x2F;organisms-navigation-finna-navbar.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-navbar" title="Link to Pattern">
+							Navbar
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-navbar" data-patternpartial="organisms-finna-navbar" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-navbar">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="navbar-default finna-navbar-component navbar" aria-label="Finna navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#finna-navbar-collapse" aria-expanded="false">
+                More        <i class="fa fa-handle-open"></i>      </button>
+              <span class="navbar-brand">
+          <a href="#">                    Brand content          </a>        </span>
+          </div>
+    <div class="collapse navbar-collapse" id="finna-navbar-collapse">
+      <p>Collapse content</p>    </div>
+  </div>
+</nav>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-navbar" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>Navbars are responsive components that serve as navigation headers for your\napplication or site. They begin collapsed (and are toggleable) in mobile views\nand become horizontal as the available viewport width increases.</p>\n<h3>Properties</h3>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ariaLabel</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>attributes</code></td>\n<td>array</td>\n</tr>\n<tr>\n<td><code>brandContent</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>brandLink</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>brandSrOnly</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>collapseContent</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>collapseId</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>toggleBtnSrOnly</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>toggleBtnIconClass</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>toggleBtnLabel</code></td>\n<td>string</td>\n</tr>\n</tbody>\n</table>\n<h3>Variations</h3>\n<p>Add the <code>finna-navbar-content</code> class for a content navigation variation. This\nvariation has a prominent color for the navbar and styles the mobile collapse\ncontent to look similar to dropdown menus.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Navbar","patternPartial":"organisms-finna-navbar","patternState":"complete","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-navbar-demo" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-navbar-demo&#x2F;organisms-navigation-finna-navbar-demo.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-navbar-demo" title="Link to Pattern">
+							Navbar - Demo
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-navbar-demo" data-patternpartial="organisms-finna-navbar-demo" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-navbar-demo">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="navbar-default finna-navbar-component navbar" aria-label="Demo navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#finna-navbar-demo-collapse" aria-expanded="false">
+                More        <i class="fa fa-handle-open"></i>      </button>
+              <span class="navbar-brand">
+          <a href="#">                    Brand          </a>        </span>
+          </div>
+    <div class="collapse navbar-collapse" id="finna-navbar-demo-collapse">
+      <ul class="navbar-nav finna-nav nav">
+      <li class="active" aria-current="page">
+    <a href="#">Link</a>
+  
+  </li>
+      <li>
+    <a href="#">Link</a>
+  
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Action</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Another action</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Something else here</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+    </div>
+  </div>
+</nav>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-navbar-demo" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Navbar - Demo","patternPartial":"organisms-finna-navbar-demo","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-navbar-demo-content" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-navbar-demo-content&#x2F;organisms-navigation-finna-navbar-demo-content.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-navbar-demo-content" title="Link to Pattern">
+							Navbar - Demo - Content variation
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-navbar-demo-content" data-patternpartial="organisms-finna-navbar-demo-content" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-navbar-demo-content">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="finna-navbar-content finna-navbar-component navbar" aria-label="Demo navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#finna-navbar-demo-content-collapse" aria-expanded="false">
+                More        <i class="fa fa-handle-open"></i>      </button>
+              <span class="navbar-brand">
+          <a href="#">                    Content navbar          </a>        </span>
+          </div>
+    <div class="collapse navbar-collapse" id="finna-navbar-demo-content-collapse">
+      <ul class="navbar-nav finna-nav nav">
+      <li class="active" aria-current="page">
+    <a href="#">Link</a>
+  
+  </li>
+      <li>
+    <a href="#">Link</a>
+  
+  </li>
+      <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <b class="caret"></b></a>
+  
+      <ul class="dropdown-menu">
+              <li>
+          <a href="#"><span>Action</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Another action</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Something else here</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+    </div>
+  </div>
+</nav>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-navbar-demo-content" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Navbar - Demo - Content variation","patternPartial":"organisms-finna-navbar-demo-content","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-tabs-nav" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-tabs-nav&#x2F;organisms-navigation-finna-tabs-nav.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-tabs-nav" title="Link to Pattern">
+							Tabs nav
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-tabs-nav" data-patternpartial="organisms-finna-tabs-nav" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-tabs-nav">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav aria-label="Finna tabs nav" class="finna-tabs-nav clearfix">
+    <ul class="nav-tabs finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+  
+  </li>
+  </ul>
+</nav>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-tabs-nav" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>Tabbed navigation bar that will also show the active tab's children.</p>\n<h3>Properties</h3>\n<table>\n<thead>\n<tr>\n<th>Property</th>\n<th>Type</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>ariaCurrent</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>ariaLabel</code></td>\n<td>string</td>\n</tr>\n<tr>\n<td><code>attributes</code></td>\n<td>array</td>\n</tr>\n<tr>\n<td><code>items</code></td>\n<td>array</td>\n</tr>\n</tbody>\n</table>\n<h3>Variations</h3>\n<p><code>ariaCurrent</code> is used for possible active items. If this property is set it will\noverride the same property in all items.</p>\n<p>Add the <code>finna-tabs-nav-lg</code> class for a larger variation.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Tabs nav","patternPartial":"organisms-finna-tabs-nav","patternState":"complete","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-tabs-nav-demo" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-tabs-nav-demo&#x2F;organisms-navigation-finna-tabs-nav-demo.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-tabs-nav-demo" title="Link to Pattern">
+							Tabs nav - Demo
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-tabs-nav-demo" data-patternpartial="organisms-finna-tabs-nav-demo" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-tabs-nav-demo">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="js-tablist-example finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+  
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-tabs-nav-demo" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>A more functional Pattern Lab demo with selectable tabs.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Tabs nav - Demo","patternPartial":"organisms-finna-tabs-nav-demo","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-tabs-nav-demo-lg" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-tabs-nav-demo-lg&#x2F;organisms-navigation-finna-tabs-nav-demo-lg.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-tabs-nav-demo-lg" title="Link to Pattern">
+							Tabs nav - Demo - Large variation
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-tabs-nav-demo-lg" data-patternpartial="organisms-finna-tabs-nav-demo-lg" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-tabs-nav-demo-lg">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="finna-tabs-nav-lg finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs finna-nav-lg finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+  
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-tabs-nav-demo-lg" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Tabs nav - Demo - Large variation","patternPartial":"organisms-finna-tabs-nav-demo-lg","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-tabs-nav-demo-multi-level" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-tabs-nav-demo-multi-level&#x2F;organisms-navigation-finna-tabs-nav-demo-multi-level.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-tabs-nav-demo-multi-level" title="Link to Pattern">
+							Tabs nav - Demo - Multi-level variation
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-tabs-nav-demo-multi-level" data-patternpartial="organisms-finna-tabs-nav-demo-multi-level" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-tabs-nav-demo-multi-level">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="js-tablist-example finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs active-multi-level finna-nav nav">
+      <li class="active-trail">
+    <a href="#">Primary item 1</a>
+  
+      <ul>
+              <li class="active">
+          <a href="#"><span>Secondary item 1.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 1.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 2</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 2.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 2.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+      <li>
+    <a href="#">Primary item 3</a>
+  
+      <ul>
+              <li>
+          <a href="#"><span>Secondary item 3.1</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.2</span>
+          </a>
+        </li>
+              <li>
+          <a href="#"><span>Secondary item 3.3</span>
+          </a>
+        </li>
+          </ul>
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-tabs-nav-demo-multi-level" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Tabs nav - Demo - Multi-level variation","patternPartial":"organisms-finna-tabs-nav-demo-multi-level","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->			<div id="organisms-finna-tabs-nav-demo-tooltip" class="pl-c-pattern">
+			
+				<div class="pl-c-pattern__header">
+			
+					<h3 class="pl-c-pattern__title">
+			
+						<a href="../../patterns/organisms-navigation-finna-tabs-nav-demo-tooltip&#x2F;organisms-navigation-finna-tabs-nav-demo-tooltip.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-finna-tabs-nav-demo-tooltip" title="Link to Pattern">
+							Tabs nav - Demo - Tooltip
+			
+							<span class="pl-c-pattern-state pl-c-pattern-state--demo" title="demo"></span>
+			
+						</a><!--end pl-c-pattern__title-link-->
+			
+					</h3><!--end pl-c-pattern__title-->
+			
+					<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-finna-tabs-nav-demo-tooltip" data-patternpartial="organisms-finna-tabs-nav-demo-tooltip" title="View Pattern Info">
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+						<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+							<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+								<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							</svg>
+			
+							<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+								<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+								<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+								<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+							</svg>
+						</div>
+					</button>
+			
+				</div><!--end pl-c-pattern__header-->
+			
+				<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-finna-tabs-nav-demo-tooltip">
+			    </div><!--end pl-c-pattern__extra-->
+			
+				<div class="pl-js-pattern-example">
+				<nav class="js-tablist-tooltip-example finna-tabs-nav clearfix" aria-label="Finna tabs nav">
+    <ul class="nav-tabs finna-nav nav">
+      <li class="active">
+    <a href="#">Item 1</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 1 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 1" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+      <li>
+    <a href="#">Item 2</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 2 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 2" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+      <li>
+    <a href="#">Item 3</a>
+      <button type="button" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<h4>Tab 3 tooltip</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat sit amet ligula bibendum sodales.</p><p><a href='#'>Etiam eget est justo</a></p>" aria-label="Help - Item 3" class="finna-tooltip-btn">
+  <i class="fa fa-info-big"></i> </button>
+  
+  </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(document).ready(function onTabsReady() {
+    var initExampleTabs = function() {
+      var $tablist = $('.finna-tabs-nav');
+      var $tabs = $tablist.find('li');
+      var $tabLinks = $tabs.find('a');
+      $tabLinks.on('click', function onClickTab() {
+        $tabs.removeClass('active');
+        $tabs.removeClass('active-trail');
+        $tabs.attr('aria-selected', false);
+        $(this).parent().addClass('active');
+        $(this).parent().attr('aria-selected', true);
+      });
+    };
+    initExampleTabs();
+  });
+</script>
+
+				</div><!--end pl-js-pattern-example-->
+			
+				<script type="text/json" id="pl-pattern-data-organisms-finna-tabs-nav-demo-tooltip" class="pl-js-pattern-data">
+				{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h3>Description</h3>\n<p>A more functional Pattern Lab demo with selectable tabs containing tooltips.</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"phtml","patternName":"Tabs nav - Demo - Tooltip","patternPartial":"organisms-finna-tabs-nav-demo-tooltip","patternState":"demo","patternEngineName":"phtml","extraOutput":{}}
+				</script>
+			
+			</div><!--end pl-c-pattern-->
+  </div><!--end pl-c-pattern-index-->
+
+</div><!--end pl-c-main-->
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-organisms-navigation"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-organisms-navigation"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1611825455362">
+  (function() {
+    if (self != top) {
+      var cb = '1611825455362';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1611825455362" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+  </body>
+</html>
