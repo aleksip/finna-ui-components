@@ -9,15 +9,15 @@ A tooltip button with an icon and/or label.
 
 ### Properties
 
-| Property            | Type   | Example value                                               | Required |
-| ------------------- | ------ | ----------------------------------------------------------- | -------- |
-| `ariaLabel`         | string |                                                             | Yes/No   |
-| `attributes`        | array  |                                                             | No       |
-| `content`           | string | `<h4>Tooltip bottom</h4><p>Lorem ipsum dolor sit amet.</p>` | Yes      |
-| `iconClass`         | string | `fa fa-info-big`                                            | No       |
-| `label`             | string | Show tooltip                                                | No       |
-| `placement`         | string | `bottom` (default value)                                    | No       |
+| Property            | Type   | Default Value |
+| ------------------- | ------ | ------------- |
+| `ariaLabel`         | string |               |
+| `attributes`        | array  |               |
+| `content`           | string |               |
+| `iconClass`         | string |               |
+| `label`             | string |               |
+| `placement`         | string | `bottom`      |
 
 ### Notes
 
-`ariaLabel` is not required if there is a `label`.
+`ariaLabel` is not used if there is a `label`.

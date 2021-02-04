@@ -11,25 +11,26 @@ and become horizontal as the available viewport width increases.
 
 ### Properties
 
-| Property             | Type   | Example value            | Required |
-| -------------------- | ------ | ------------------------ | -------- |
-| `ariaLabel`          | string | Finna navigation         | Yes      |
-| `attributes`         | array  |                          | No       |
-| `brandContent`       | string | Brand content            | No       |
-| `brandLink`          | string |                          | No       |
-| `brandSrOnly`        | string |                          | No       |
-| `collapseContent`    | string | A rendered nav component | Yes      |
-| `collapseId`         | string | `finna-navbar-collapse`  | Yes      |
-| `toggleBtnSrOnly`    | string | More                     | Yes/No   |
-| `toggleBtnIconClass` | string | `fa fa-handle-open`      | No       |
-| `toggleBtnLabel`     | string |                          | No       |
+| Property             | Type   |
+| -------------------- | ------ |
+| `ariaLabel`          | string |
+| `attributes`         | array  |
+| `brandContent`       | string |
+| `brandLink`          | string |
+| `brandSrOnly`        | string |
+| `collapseContent`    | string |
+| `collapseId`         | string |
+| `toggleBtnSrOnly`    | string |
+| `toggleBtnIconClass` | string |
+| `toggleBtnLabel`     | string |
 
 ### Notes
 
-The `toggleBtnSrOnly` property is required if there is no `toggleBtnLabel`.
+The component defines a `finna-navbar-icon-caret` class that can be used as a
+value for `toggleBtnIconClass`.
 
 ### Variations
 
-Add the `finna-navbar-content` class for a content navigation variation. This
-variation has a prominent color for the navbar and styles the mobile collapse
-content to look similar to dropdown menus.
+| Class                  | Description |
+| ---------------------- | ----------- |
+| `finna-navbar-content` | Content navigation variation. This variation has a prominent color for the navbar and the mobile collapse content is styled to look similar to dropdown menus. |
