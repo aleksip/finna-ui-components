@@ -8,7 +8,7 @@ Organisation page.
 
 #### Child components
 
-- `molecules/accordion/accordion/accordion.phtml`
+- `molecules/containers/finna-panel/finna-panel.phtml`
 - `molecules/media/service-point-building/service-point-building.phtml`
 - `molecules/lists/contact/contact.phtml`
 - `molecules/lists/service/service.phtml`

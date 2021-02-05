@@ -1,6 +1,0 @@
-{
-  "icon": "fa fa-arrow-down",
-  "titleId": "toggleCustomIconTitle",
-  "contentId": "toggleCustomIconContent",
-  "initallyOpen": false
-}

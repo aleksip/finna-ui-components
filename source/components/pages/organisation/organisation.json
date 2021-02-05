@@ -137,8 +137,8 @@
   "news": {
     "accordion": {
       "title": "Uutiset",
-      "titleId": "accordionEventsTitle",
-      "contentId": "accordionEventsContent"
+      "titleId": "accordionNewsTitle",
+      "contentId": "accordionNewsContent"
     },
     "wrapperClass": "js-organisation-news-feed",
     "rssId": "news",
