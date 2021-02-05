@@ -1,4 +1,4 @@
-<?= $this->render('components/organisms/global/header/header.phtml', ['header' => $pageHeader]) ?>
+<?= $this->render('components/organisms/global/header/header.phtml', ['pageHeader' => $pageHeader]) ?>
 <section role="main" class="main">
   <div class="container main-content">
     <div class="organisation-page">
@@ -11,7 +11,15 @@
 
             <?php $accordion =  $introduction['accordion'] ?>
 
-            <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $introductionContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+            <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+                'attributes' => ['class' => ['finna-panel-borderless']],
+                'heading' => $accordion['title'],
+                'headingLevel' => 4,
+                'content' => $introductionContent,
+                'headingId' => $accordion['titleId'],
+                'collapseId' => $accordion['contentId'],
+                'collapsed' => false
+              ]); ?>
           </div>
           <div class="column">
             <?php
@@ -19,7 +27,15 @@
 
             <?php $accordion =  $schedule['accordion'] ?>
 
-            <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $openingTimesContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+            <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+                'attributes' => ['class' => ['finna-panel-borderless']],
+                'heading' => $accordion['title'],
+                'headingLevel' => 4,
+                'content' => $openingTimesContent,
+                'headingId' => $accordion['titleId'],
+                'collapseId' => $accordion['contentId'],
+                'collapsed' => false
+              ]); ?>
           </div>
           <div class="column">
             <?php
@@ -28,7 +44,15 @@
 
             <?php $accordion =  $contact['accordion'] ?>
 
-            <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $contactContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+            <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+                'attributes' => ['class' => ['finna-panel-borderless']],
+                'heading' => $accordion['title'],
+                'headingLevel' => 4,
+                'content' => $contactContent,
+                'headingId' => $accordion['titleId'],
+                'collapseId' => $accordion['contentId'],
+                'collapsed' => false
+              ]); ?>
           </div>
         </div>
 
@@ -56,7 +80,15 @@
 
           <?php $accordion =  $services['accordion'] ?>
 
-          <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $servicesContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+          <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+              'attributes' => ['class' => ['finna-panel-borderless']],
+              'heading' => $accordion['title'],
+              'headingLevel' => 4,
+              'content' => $servicesContent,
+              'headingId' => $accordion['titleId'],
+              'collapseId' => $accordion['contentId'],
+              'collapsed' => false
+            ]); ?>
         </div>
         <div class="office-row-general">
           <?php
@@ -65,7 +97,15 @@
 
           <?php $accordion =  $news['accordion'] ?>
 
-          <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $newsContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+          <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+              'attributes' => ['class' => ['finna-panel-borderless']],
+              'heading' => $accordion['title'],
+              'headingLevel' => 4,
+              'content' => $newsContent,
+              'headingId' => $accordion['titleId'],
+              'collapseId' => $accordion['contentId'],
+              'collapsed' => true
+            ]); ?>
         </div>
         <div class="office-row-general">
           <?php
@@ -74,10 +114,18 @@
 
           <?php $accordion =  $events['accordion'] ?>
 
-          <?= $this->render('components/molecules/accordion/accordion/accordion.phtml', ['title' => $accordion['title'], 'titleId' => $accordion['titleId'], 'contentId' => $accordion['contentId'], 'content' => $eventsContent, 'initallyOpen' => true, 'darkTheme' => true, 'iconAlign' => 'right']); ?>
+          <?= $this->render('components/molecules/containers/finna-panel/finna-panel.phtml', [
+              'attributes' => ['class' => ['finna-panel-borderless']],
+              'heading' => $accordion['title'],
+              'headingLevel' => 4,
+              'content' => $eventsContent,
+              'headingId' => $accordion['titleId'],
+              'collapseId' => $accordion['contentId'],
+              'collapsed' => true
+            ]); ?>
         </div>
       </section>
     </div>
   </div>
 </section>
-<?= $this->render('components/organisms/global/footer/footer.phtml', ['footer' => $pageFooter]) ?>
+<?= $this->render('components/organisms/global/footer/footer.phtml', ['pageFooter' => $pageFooter]) ?>
