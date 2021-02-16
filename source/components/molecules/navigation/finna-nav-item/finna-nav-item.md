@@ -9,28 +9,30 @@ Navigation item with optional tooltip button and children.
 
 ### Properties
 
-| Property         | Type    | Example value                  | Required |
-| ---------------- | ------- | ------------------------------ | -------- |
-| `active`         | boolean | `true`                         | No       |
-| `attributes`     | array   |                                | No       |
-| `children`       | array   | Array of finna-nav-item arrays | No       |
-| `description`    | string  | Additional description         | No       |
-| `label`          | string  | Item label                     | Yes      |
-| `link`           | string  | `https://finna.fi`             | Yes/No   |
-| `linkAttributes` | array   |                                | No       |
-| `renderChildren` | string  | `dropdown`                     | No       |
-| `tooltipBtn`     | array   | finna-tooltip-btn array        | No       |
+| Property         | Type    | Default Value |
+| ---------------- | ------- | ------------- |
+| `active`         | boolean | `false`       |
+| `ariaCurrent`    | string  |               |
+| `attributes`     | array   |               |
+| `children`       | array   |               |
+| `description`    | string  |               |
+| `label`          | string  |               |
+| `link`           | string  |               |
+| `linkAttributes` | array   |               |
+| `renderChildren` | string  | `dropdown`    |
+| `tooltipBtn`     | array   |               |
 
 ### Notes
 
-The optional `renderChildren` property can be used to control how possible child
-items are rendered. Currently supported values are `false`, `simple` and 
-`dropdown` (default).
+`renderChildren` can be used to control how possible child items are rendered. 
+Currently supported values are `false`, `simple` and `dropdown`.
 
-The `link` property is not required (and is not used) if the item has children 
-and the value of `renderChildren` is `dropdown`.
+`link` is not used if the item has children and the value of `renderChildren`
+is `dropdown`.
 
-Tooltip buttons are only rendered for first level items that do not have a 
-dropdown.
+`tooltipBtn` should contain properties for a finna-tooltip-btn. Tooltip buttons
+are only rendered for first level items that do not have a dropdown.
+
+Descriptions are only rendered for child items.
 
 This component currently only supports one level of children.
