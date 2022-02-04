@@ -1,17 +1,25 @@
 <?php
+  $__type = $type ?? 'button';
+  $__tag = $__type === 'link' ? 'a' : 'button';
   $__attributes = $this->htmlAttributes($attributes ?? []);
-  if (!isset($__attributes['type'])) {
-    $__attributes['type'] = 'button';
-  }
-  if (!isset($label) && isset($ariaLabel)) {
+  $__attributes['type'] = $__type;
+  if (!isset($title) && !isset($label) && isset($ariaLabel)) {
     $__attributes['aria-label'] = $ariaLabel;
   }
-  // Avoid unwanted whitespace in all possible variations.
+  if (isset($ariaCurrent)) {
+    $__attributes['aria-current'] = $ariaCurrent;
+  }
+  $values = [];
+  if (isset($iconClass)) {
+    $values['iconClass'] = $iconClass;
+  }
+  if (isset($title)) {
+    $values['title'] = $title;
+  }
+  if (isset($label)) {
+    $values['label'] = $label;
+  }
 ?>
-<button<?= $__attributes->add('class', 'finna-btn') ?>><?php
-  if (isset($iconClass) || isset($label)): ?><?php
-    if (isset($iconClass)): ?><i class="<?= $iconClass ?>" aria-hidden="true"></i><?php endif; ?><?php
-    if (isset($iconClass) && isset($label)): ?> <?php endif; ?><?=
-    $label ?? '' ?><?php
-  endif;
-?></button>
+<<?= $__tag ?><?= $__attributes->add('class', 'finna-btn') ?>><?=
+  $this->render('components/molecules/icons/finna-icon-label/finna-icon-label.phtml', $values);
+?></<?= $__tag ?>>
