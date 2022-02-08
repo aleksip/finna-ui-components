@@ -1,0 +1,10 @@
+{
+  "languageVersions": {
+    "en-gb": "English",
+    "fi": "Finnish"
+  },
+  "messages": {
+    "en-gb": "Demo message",
+    "fi": "Esimerkkiviesti"
+  }
+}

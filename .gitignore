@@ -1,0 +1,9 @@
+/node_modules/
+/pattern_exports/
+/public/*
+!/public/css/
+!/public/fonts/
+!/public/js/
+/source/_meta/_foot.mustache
+/source/_meta/_head.mustache
+/dependencyGraph.json

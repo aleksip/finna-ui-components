@@ -1,0 +1,32 @@
+<?php
+  $__attributes = $this->htmlAttributes($attributes ?? []);
+  $__attributes['data-section'] = $section;
+  if (!empty($customEdit)) {
+    $__attributes->add('class', 'custom-edit');
+  }
+  if (!empty($deferred)) {
+    $__attributes->add('class', 'deferred');
+  }
+  $__showLink = $canShow ?? false;
+?>
+<div<?= $__attributes->add('class', ['card', 'panel', 'panel-default', 'edit-phase', 'mt-3']); ?>>
+  <div class="panel-heading header card-header">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="align-items-center">
+        <h5 class="card-title mb-0"><?= $heading ?></h5>
+        <?php if ($__showLink) : ?>
+          <div class="header-extra">
+            <?= isset($headingUrl) && $headingUrl !== null ?
+              "<a href=\"$headingUrl\"><i class=\"fa fa-external-link\" aria-hidden=\"true\"></i></a>"
+              : '';
+            ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="buttons"></div>
+    </div>
+  </div>
+  <div class="panel-body card-body">
+    <?= $body ?>
+  </div>
+</div>

@@ -1,0 +1,201 @@
+<div class="view-header">
+  <div class="row">
+    <div class="col">
+      <h1 id="viewName" class="display-1">
+        <?= $viewName ?>
+        <?php if ($isDefaultView): ?>
+          <small><i>(<?= $this->transEsc('default_view'); ?>)</i></small>
+        <?php endif; ?>
+        <?php if (!$waitingForPublish && $canRename): ?>
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'class' => ['btn', 'btn-link'],
+              ],
+              'iconClass' => ['fa', 'fa-pencil', 'edit-button'],
+              'title' => $this->translate('edit_view_name'),
+            ]); ?>
+        <?php endif; ?>
+      </h1>
+      <?php if (!$waitingForPublish && $canRename) : ?>
+        <form id="viewNameForm" style="display: none;">
+          <input class="form-control" type="text" name="name" value="<?= $this->escapeHtmlAttr($viewName); ?>"/>
+          <input type="hidden" name="view" value="<?= $this->escapeHtmlAttr($viewId); ?>"/>
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'class' => ['save', 'btn', 'btn-primary'],
+              ],
+              'label' => $this->translate('save_btn_label'),
+              'type' => 'submit',
+            ]) ?>
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'id' => 'viewNameFormHideButton',
+                'class' => ['cancel', 'btn', 'btn-outline-primary'],
+              ],
+              'label' => $this->translate('cancel_btn_label'),
+            ]) ?>
+        </form>
+      <?php endif; ?>
+
+      <?php if (!empty($parent)): ?>
+        <p class="view-header-parent">
+          <?= $this->transEsc('parent_view'); ?>:
+          <a href="<?= $parent['url'] ?>"><?= $parent['name'] ?></a>
+        </p>
+      <?php endif; ?>
+      <?php if (!empty($children)): ?>
+        <div class="view-header-children">
+          <p><?= $this->transEsc('child_views'); ?>:</p>
+          <ul>
+            <?php foreach ($children as $child): ?>
+              <li><a href="<?= $child['url'] ?>"><?= $child['name'] ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'class' => ['btn', 'btn-sm', 'text-primary'],
+                'href' => $this->url('file-management') . '?' . http_build_query(['id' => $viewId]),
+              ],
+              'iconClass' => ['fa', 'fa-folder-open', 'fa-lg', 'text-primary'],
+              'label' => $this->transEsc('file_management'),
+            ]); ?>
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'class' => ['btn', 'btn-sm', 'text-primary'],
+                'href' => $this->url('file-management') . '?' . http_build_query(['id' => $viewId]),
+              ],
+              'iconClass' => ['fa', 'fa-chart-line', 'fa-lg', 'text-primary'],
+              'label' => $this->transEsc('statistics'),
+            ]); ?>
+          <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', [
+              'attributes' => [
+                'class' => ['btn', 'btn-sm', 'text-primary'],
+                'href' => $this->url('file-management') . '?' . http_build_query(['id' => $viewId]),
+              ],
+              'iconClass' => ['fa', 'fa-list-check', 'fa-lg', 'text-primary'],
+              'label' => $this->transEsc('feedback_main_header'),
+            ]); ?>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <?= $this->transEsc('view_created_on') ?>:
+        </div>
+        <div class="col">
+          <?= $dateCreated ?> / <?= $creatorName ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <?= $this->transEsc('view_updated_on') ?>:
+        </div>
+        <div class="col">
+          <?php if ($dateCreated != $dateModified): ?>
+            <?= $dateModified ?> / <?= $modifierName ?>
+          <?php else : ?>
+            <?= $this->transEsc('view_never_updated') ?>
+          <?php endif; ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">URL:</div>
+        <div class="col"><a href="<?= $viewUrl ?>" target="_blank"><?= $viewUrl ?></a></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <?php if ($isPublished): ?>
+            <?= $this->transEsc('previously_published'); ?>
+            <?= $datePublished ?>
+            (<?= $this->transEsc('publisher'); ?>: <?= $publisherName ?>)
+          <?php else: ?>
+              <?= $this->transEsc('never_previously_published') ?>
+          <?php endif; ?>
+        </div>
+      </div>
+
+      <div class="btn-toolbar">
+        <div class="btn-group">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <?php if (!$waitingForPublish && !$isDefaultView): ?>
+        <?php
+          $values = [
+            'attributes' => [
+              'id' => 'set-default-view-btn',
+              'class' => ['btn', 'btn-outline-primary'],
+            ],
+            'label' => $this->transEsc('set_as_default_view_btn_label'),
+            'onClick' => 'AI.View.onSetAsDefaultView(' . $viewId . ')'
+          ];
+          if (!$isPublished) {
+            $values['attributes']['disabled'] = 'disabled';
+            $values['title'] = $this->translate('only_published_view_can_be_set_default_view');
+          }
+        ?>
+        <?= $this->render('components/molecules/buttons/finna-btn/finna-btn.phtml', $values); ?>
+      <?php endif; ?>
+
+      <div id="publish-view" class="p-3 mt-3 mb-3 ui-dialog-buttonpane ui-widget-content ui-helper-clear">
+        <div class="col">
+          <div class="header">
+            <h3 class="display-3"><?= $this->transEsc('view_edit_publishing_view'); ?></h3>
+          </div>
+          <?php if ($waitingForPublish): ?>
+            <div class="publish-view-spinner alert alert-warning">
+              <p><?= $this->transEsc('waiting_for_publish') ?>
+                <i class="publish-view-spinner fa fa-spin fa-spinner"></i>
+              <p>
+            </div>
+          <?php else : ?>
+            <button
+              class="publish-view-btn btn btn-danger"
+              <?= !$canPublish || !$isProductionIndexOn ? 'disabled' : '' ?>
+              title="<?= !$isProductionIndexOn ?
+                $this->escapeHtmlAttr($this->translate('view_enable_production_index_to_publish_view'))
+                : '' ?>"
+              onClick="AI.View.onPublishView(<?= $viewId ?>)"
+            ><?= $this->transEsc('publish_to_production_btn_label') ?>
+            </button>
+          <?php endif; ?>
+        </div>
+        <div class="col">
+          <?php
+            if ($isPublished) {
+              echo $this->render('components/organisms/admin/ai-view-edit-section/ai-view-edit-section.phtml', [
+                  'attributes' => [
+                    'data-no-cancel' => 1,
+                    'data-no-overlay' => 1,
+                    'data-no-save' => 1,
+                    'data-no-section-highlight' => 1,
+                  ],
+                  'body' => $this->render('components/organisms/admin/ai-section-system-configuration/ai-section-system-configuration.phtml', [
+                      'languageVersions' => $languageVersions,
+                      'messages' => $messages,
+                    ]
+                  ),
+                  'heading' => $this->transEsc('view_exception_header'),
+                  'section' => 'system-configuration',
+                ]
+              );
+            }
+          ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

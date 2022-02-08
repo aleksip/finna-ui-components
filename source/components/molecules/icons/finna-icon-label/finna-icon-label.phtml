@@ -1,0 +1,14 @@
+<?php
+  if (isset($iconClass)) {
+    $__iconAttributes = $this->htmlAttributes(['class' => $iconClass]);
+    $__iconAttributes['aria-hidden'] = 'true';
+    if (isset($title)) {
+      $__iconAttributes['title'] = $title;
+    }
+  }
+  // Avoid unwanted whitespace in all possible variations.
+?><?php if (isset($iconClass) || isset($label)): ?><?php
+  if (isset($iconClass)): ?><i<?= $__iconAttributes ?>></i><?php endif; ?><?php
+  if (isset($title)): ?><span class="visually-hidden"><?= $title ?></span><?php endif; ?><?php
+  if (isset($iconClass) && isset($label)): ?> <?php endif; ?><?=
+  $label ?? '' ?><?php endif; ?>

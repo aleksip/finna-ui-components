@@ -1,0 +1,42 @@
+{
+  "name": "finna-ui-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatLibFi/finna-ui-components.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.0.0",
+    "bootstrap": "5.1.3",
+    "design-token-transformer": "github:aleksip/finna-design-tokens",
+    "jquery": "3.5.1",
+    "jquery-ui-dist": "1.12.1"
+  },
+  "devDependencies": {
+    "@pattern-lab/cli": "5.16.2",
+    "@pattern-lab/core": "5.16.2",
+    "@pattern-lab/uikit-workshop": "5.16.2",
+    "browser-sync": "2.27.7",
+    "concurrently": "7.0.0",
+    "engine-phtml": "github:aleksip/engine-phtml",
+    "fs-extra": "10.0.0",
+    "onchange": "7.1.0",
+    "postcss": "8.4.5",
+    "postcss-import": "14.0.2",
+    "postcss-preset-env": "7.2.3",
+    "postcss-reporter": "7.0.5",
+    "sass": "1.49.0"
+  },
+  "scripts": {
+    "build": "npm run vendor-update && npm run build:css && npm run build:pl",
+    "build:css": "npm run build:scss && npm run build:pcss",
+    "build:scss": "sass --load-path=source/scss --load-path=node_modules source/scss:public/css",
+    "build:pl": "patternlab build --config ./patternlab-config.json",
+    "build:pcss": "node scripts/postcss-build.js",
+    "serve": "browser-sync start --server 'public' --files 'public'",
+    "vendor-update": "node ./scripts/assets.js",
+    "watch": "concurrently 'npm:watch:*' 'npm:serve'",
+    "watch:components": "onchange 'source/components/**/*.phtml' 'source/components/**/*.json' 'source/components/**/*.md' -- npm run build:pl",
+    "watch:pcss": "onchange 'source/pcss/**/*.pcss' 'source/components/**/*.pcss' -- npm run build:pcss",
+    "watch:scss": "sass --watch --load-path=source/scss --load-path=node_modules source/scss:public/css"
+  }
+}

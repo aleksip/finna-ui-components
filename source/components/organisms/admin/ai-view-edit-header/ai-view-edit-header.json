@@ -1,0 +1,59 @@
+{
+  "canPublish": true,
+  "canRename": false,
+  "children": [
+    {
+      "name": "Alinäkymä",
+      "url": "https://foo.bar.com"
+    }
+  ],
+  "creatorName": "Foo Bar",
+  "dateCreated": "7.2.2022 15:21",
+  "dateModified": "7.2.2022 15:21",
+  "datePublished": "7.2.2022 15:21",
+  "fileManagementUrl": "https://foo.bar.com",
+  "isDefaultView": true,
+  "isPublished": false,
+  "isProductionIndexOn": true,
+  "languageVersions": {
+    "en-gb": "English",
+    "fi": "Finnish"
+  },
+  "messages": {
+    "en-gb": "Demo message",
+    "fi": "Esimerkkiviesti"
+  },
+  "modifierName": "Foo Bar",
+  "parent": {
+    "name": "Ylänäkymä",
+    "url": "https://foo.bar.com"
+  },
+  "publisherName": "Foo Bar",
+  "viewId": "1",
+  "viewName": "Julkaisematon näkymä",
+  "viewUrl": "https://foo.bar.com",
+  "waitingForPublish": false,
+
+  "cancel_btn_label": "Peruuta",
+  "child_views": "Alinäkymät",
+  "default_view": "oletusnäkymä",
+  "edit_view_name": "edit_view_name",
+  "feedback_main_header": "Lomakkeet",
+  "file_management": "Tiedostonhallinta",
+  "save_btn_label": "Tallenna",
+  "set_as_default_view_btn_label": "Aseta oletusnäkymäksi",
+  "statistics": "Tilastot",
+  "never_previously_published": "Näkymää ei ole koskaan julkaistu.",
+  "only_published_view_can_be_set_default_view": "Vain julkaistun näkymän voi asettaa oletusnäkymäksi",
+  "parent_view": "Ylänäkymä",
+  "previously_published": "Edellisen kerran julkaistu",
+  "publish_to_production_btn_label": "Julkaise muutokset",
+  "publisher": "Julkaisija",
+  "view_edit_publishing_view": "Näkymän julkaiseminen",
+  "view_enable_production_index_to_publish_view": "Näkymä käyttää testi-indeksiä. Julkaistaksesi näkymän, aseta tuotantoindeksi päälle.",
+  "view_exception_header": "Poikkeusviesti",
+  "view_created_on": "Luotu",
+  "view_never_updated": "Näkymää ei ole päivitetty",
+  "view_updated_on": "Viimeisin päivitys",
+  "waiting_for_publish": "Näkymä on julkaistu ja odottaa siirtoa tuotantopalvelimelle. <br />Näkymää ei voi muokata siirron aikana."
+}

@@ -1,0 +1,39 @@
+<div class="message">
+  <p<?= $this->htmlAttributes(['id' => 'exc-msg-holder', 'data-placeholder' => $this->translate('not_in_use')]); ?>>
+    <?php foreach ($languageVersions as $__code => $__name) : ?>
+      <?php
+        $__msg = !empty($messages[$__code]) ? $messages[$__code] : '';
+        $__msgAttributes = $this->htmlAttributes([
+          'class' => 'line' . empty($__msg) ? ' hidden' : '',
+          'data-lang' => $__code
+        ]);
+      ?>
+      <span<?= $__msgAttributes ?>><?= $this->escapeHtml($__msg); ?></span>
+    <?php endforeach; ?>
+  </p>
+</div>
+
+<div<?= $this->htmlAttributes([
+    'id' => 'system-configuration-dialog',
+    'title' => $this->translate('view_exception_info'),
+    'style' => 'display: none;'
+  ]); ?>>
+  <p><strong><?= $this->transEsc('view_exception_important'); ?></strong> <?= $this->transEsc('view_exception_note'); ?></p>
+  <form action="<?= $this->url('view', ['action' => 'savesystemconfiguration']); ?>"
+        method="post" name="system-configuration-form"
+        id="system-configuration-form">
+    <?php foreach ($languageVersions as $__code => $__name) : ?>
+      <h4><?= $__name ?></h4>
+      <textarea name="system-message[<?= $this->escapeHtml($__code) ?>]" data-lang="<?= $this->escapeHtml($__code) ?>"
+                rows="3"
+                cols="50"><?= isset($messages[$__code]) ? $this->escapeHtml($messages[$__code]) : '' ?></textarea>
+    <?php endforeach; ?>
+    <input type="hidden" name="view" id="view" value="<?= 'nav-lang-' . $this->escapeHtml($__code); ?>"/>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    AI.ViewUI.initSection('system-configuration');
+  });
+</script>

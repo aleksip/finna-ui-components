@@ -1,0 +1,28 @@
+<?php
+  $__attributes = $this->htmlAttributes($attributes ?? []);
+  if (isset($__attributes['href'])) {
+    $__tag = 'a';
+  } else {
+    $__tag = 'button';
+    $__attributes['type'] = $type ?? $__attributes['type'] ?? 'button';
+  }
+  if (!isset($title) && !isset($label) && isset($ariaLabel)) {
+    $__attributes['aria-label'] = $ariaLabel;
+  }
+  if (isset($ariaCurrent)) {
+    $__attributes['aria-current'] = $ariaCurrent;
+  }
+  $values = [];
+  if (isset($iconClass)) {
+    $values['iconClass'] = $iconClass;
+  }
+  if (isset($title)) {
+    $values['title'] = $title;
+  }
+  if (isset($label)) {
+    $values['label'] = $label;
+  }
+?>
+<<?= $__tag ?><?= $__attributes->add('class', 'finna-btn') ?>><?=
+  $this->render('components/molecules/icons/finna-icon-label/finna-icon-label.phtml', $values);
+?></<?= $__tag ?>>

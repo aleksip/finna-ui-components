@@ -1,0 +1,10 @@
+{
+  "attributes": [],
+  "body": "Body",
+  "canShow": true,
+  "customEdit": true,
+  "deferred": true,
+  "heading": "Heading",
+  "headingUrl": "https://bar.com/foo",
+  "section": "section"
+}

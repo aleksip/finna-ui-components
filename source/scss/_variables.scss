@@ -1,0 +1,11 @@
+@import "design-token-transformer/build/scss/variables";
+
+$finna-spacer: 1rem;
+$finna-spacers: (
+  0: 0,
+  1: $finna-spacer * .25,
+  2: $finna-spacer * .5,
+  3: $finna-spacer,
+  4: $finna-spacer * 1.5,
+  5: $finna-spacer * 3,
+);
