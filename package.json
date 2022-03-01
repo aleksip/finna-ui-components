@@ -27,11 +27,11 @@
   "dependencies": {
     "@pattern-lab/cli": "^5.14.3",
     "@pattern-lab/core": "^5.14.3",
-    "@pattern-lab/engine-phtml": "git://github.com/aleksip/engine-phtml.git",
     "@pattern-lab/uikit-workshop": "^5.14.3",
     "chalk": "^4.1.0",
     "cli-progress": "^3.8.2",
     "dotenv": "^8.2.0",
+    "engine-phtml": "git://github.com/aleksip/engine-phtml.git",
     "front-matter": "^4.0.2",
     "gulp": "^4.0.2",
     "pa11y": "^5.3.0",
