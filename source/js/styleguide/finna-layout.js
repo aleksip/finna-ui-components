@@ -1,4 +1,4 @@
-/*global VuFind, videojs, checkSaveStatuses, finna, initFacetTree, priorityNav */
+/* global finna */
 finna.layout = (function finnaLayout() {
   var currentOpenTooltips = [];
 
