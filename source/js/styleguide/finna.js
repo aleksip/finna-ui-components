@@ -2,6 +2,7 @@ var finna = (function finnaModule() {
   return {
     init: function init() {
       var modules = [
+        'layout',
         'mdEditable',
       ];
 
