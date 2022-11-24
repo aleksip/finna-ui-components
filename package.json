@@ -24,6 +24,9 @@
     "stylelint": "14.3.0",
     "stylelint-config-twbs-bootstrap": "3.0.1"
   },
+  "overrides": {
+    "got": "11.8.5"
+  },
   "scripts": {
     "build": "npm run copy-assets && npm run build:css && npm run build:pl",
     "build:css": "npm run build:less",
