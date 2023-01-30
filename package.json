@@ -21,11 +21,12 @@
     "jshint": "2.13.4",
     "less": "3.13.1",
     "onchange": "7.1.0",
-    "stylelint": "14.3.0",
-    "stylelint-config-twbs-bootstrap": "3.0.1"
+    "stylelint": "14.16.1",
+    "stylelint-config-twbs-bootstrap": "3.2.1"
   },
   "overrides": {
-    "got": "11.8.5"
+    "got": "11.8.5",
+    "ua-parser-js": "1.0.33"
   },
   "scripts": {
     "build": "npm run copy-assets && npm run build:css && npm run build:pl",
