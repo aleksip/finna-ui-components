@@ -1,0 +1,4 @@
+{
+  "addResourceCallbackUrl": "https://foo.bar/callback",
+  "cancelUrl": "https://foo.bar/cancel"
+}
