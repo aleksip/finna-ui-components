@@ -1,5 +1,8 @@
 <?php
   $__attributes = $this->htmlAttributes($attributes ?? []);
+  if (isset($class)) {
+    $__attributes->add('class', $class);
+  }
   if (isset($tooltip)) {
     $__attributes->set([
       'data-bs-placement' => $tooltipPlacement ?? 'top',
@@ -22,7 +25,7 @@
   }
   // Avoid unwanted whitespace in all possible variations.
 ?><span<?= $__attributes->add('class', 'finna-icon-label'); ?>><?php
-  if (isset($iconClass) || isset($__label)): ?><?php
+  if (isset($iconClass) || isset($__label) || isset($a11yLabel)): ?><?php
     if (isset($iconClass)): ?><i<?= $__iconAttributes ?>></i><?php endif; ?><?php
     if (isset($a11yLabel)): ?><span class="sr-only"><?= $this->escapeHtml($a11yLabel) ?></span><?php endif; ?><?php
     if (isset($iconClass) && isset($__label)): ?> <?php endif; ?><?=

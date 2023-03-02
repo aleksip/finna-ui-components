@@ -12,6 +12,7 @@ An accessible icon and/or label.
 | Property           | Type         | Default Value |
 |--------------------|--------------|---------------|
 | `a11yLabel`        | array        |               |
+| `class`            | array/string |               |
 | `htmlLabel`        | boolean      | `false`       |
 | `iconClass`        | array/string |               |
 | `label`            | string       |               |
