@@ -1,5 +1,6 @@
 /node_modules/
-/public/
+/public/css/styleguide/
+/public/css/vendor/
 /source/_meta/*.mustache
 /source/css/vendor/
 /source/fonts/styleguide/

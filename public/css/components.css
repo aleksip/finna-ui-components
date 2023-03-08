@@ -1,0 +1,513 @@
+.finna-btn {
+  cursor: pointer;
+}
+.finna-btn i {
+  cursor: pointer;
+}
+.finna-editable {
+  position: relative;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+.finna-editable .finna-editable-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  padding: 3px 5px;
+  color: #595959;
+  background-color: transparent;
+  cursor: default;
+}
+.finna-editable .finna-editable-btn-icon {
+  cursor: default;
+}
+.finna-editable .finna-editable-container {
+  min-height: 1em;
+}
+.finna-editable:not(.finna-editable-open):hover,
+.finna-editable:not(.finna-editable-open):active,
+.finna-editable:not(.finna-editable-open):focus {
+  border: 1px solid #d1d1d1;
+}
+.finna-editable:not(.finna-editable-open):hover .finna-editable-btn,
+.finna-editable:not(.finna-editable-open):active .finna-editable-btn,
+.finna-editable:not(.finna-editable-open):focus .finna-editable-btn {
+  transition: all 0.2s linear;
+  color: #2b2b2b;
+}
+.finna-editable-open .finna-editable-btn {
+  display: none;
+}
+.finna-panel .panel-heading {
+  padding: 0;
+}
+.finna-panel .finna-panel-heading-inner {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+.finna-panel-default {
+  border: 0;
+  box-shadow: none;
+}
+.finna-panel-default .panel-heading {
+  outline: 1px solid #d1d1d1;
+  box-shadow: 1px 1px 1px 1px #d1d1d1;
+  background-color: #f7f7f7;
+}
+.finna-panel-default .finna-panel-heading-inner {
+  padding: 10px;
+}
+.finna-panel-default a.finna-panel-heading-inner::before {
+  font-family: finnaicons;
+  content: '\e612';
+}
+.finna-panel-default a.finna-panel-heading-inner.collapsed::before {
+  content: '\e613';
+}
+.finna-panel-default .panel-collapse,
+.finna-panel-default > .panel-body {
+  margin-top: 2px;
+  outline: 1px solid #d1d1d1;
+}
+.finna-panel-default .panel-body {
+  padding: 10px;
+}
+.finna-panel-borderless {
+  border: 0;
+  box-shadow: none;
+}
+.finna-panel-borderless .panel-heading {
+  border: 0;
+  font-size: 1.1em;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.3);
+  color: #fff;
+  background-color: #595959;
+}
+.finna-panel-borderless .finna-panel-heading-inner {
+  padding: 10px;
+}
+.finna-panel-borderless a.finna-panel-heading-inner {
+  transition: background 0.15s ease-in-out;
+}
+.finna-panel-borderless a.finna-panel-heading-inner:hover,
+.finna-panel-borderless a.finna-panel-heading-inner:active {
+  background-color: #333333;
+}
+.finna-panel-borderless a.finna-panel-heading-inner::after {
+  font-family: finnaicons;
+  content: '\e612';
+  float: right;
+}
+.finna-panel-borderless a.finna-panel-heading-inner.collapsed::after {
+  content: '\e613';
+}
+.finna-panel-borderless .panel-body {
+  padding: 10px;
+}
+finna-panel {
+  display: block;
+  outline: 1px solid #d1d1d1;
+  margin-bottom: 21px;
+  padding: 10px;
+}
+finna-panel > [slot="heading"] {
+  outline: 1px solid #d1d1d1;
+  display: block;
+  margin: -10px -10px 10px -10px;
+  padding: 10px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #f7f7f7;
+}
+.finna-truncate {
+  overflow: hidden;
+}
+.finna-truncate.height-based > :last-child {
+  margin-bottom: 0;
+}
+finna-truncate {
+  display: block;
+  outline: 1px dotted #d1d1d1;
+  padding: 10px;
+}
+finna-truncate span[slot="label"] {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.finna-nav {
+  font-size: 1em;
+}
+.finna-nav.finna-nav-tabs {
+  position: relative;
+  border-bottom: 1px solid #919191;
+  font-size: 1em;
+}
+.finna-nav.finna-nav-tabs.active-multi-level {
+  margin-bottom: 3.2em;
+}
+.finna-nav.finna-nav-tabs > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -1px;
+  border-top: 4px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid transparent;
+  background-color: #ededed;
+}
+.finna-nav.finna-nav-tabs > li.active,
+.finna-nav.finna-nav-tabs > li.active-trail {
+  border-top: 4px solid #007c90;
+  border-right: 1px solid #919191;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #919191;
+  background-color: transparent;
+}
+.finna-nav.finna-nav-tabs > li > a,
+.finna-nav.finna-nav-tabs > li > a:hover,
+.finna-nav.finna-nav-tabs > li > a:focus {
+  margin: 0;
+  border: 0;
+  padding: 0.6em 0.6em;
+  font-size: 1em;
+}
+.finna-nav.finna-nav-tabs > li > button {
+  padding-left: 0;
+  color: #007c90;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown) {
+  position: static;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown) > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown) > ul > li {
+  flex: 1 0 auto;
+  padding: 0.8em 0.6em;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown) > ul > li > a {
+  color: #121212;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown) > ul > li.active > a {
+  font-weight: bold;
+}
+.finna-nav.finna-nav-tabs > li:not(.dropdown).active > ul,
+.finna-nav.finna-nav-tabs > li:not(.dropdown).active-trail > ul {
+  display: flex;
+}
+.finna-nav.finna-nav-lg {
+  font-size: 1.14em;
+}
+@media (min-width: 1200px) {
+  .finna-nav.finna-nav-lg {
+    font-size: 1.357em;
+  }
+}
+.finna-tooltip-btn {
+  border: none;
+  background-color: transparent;
+}
+.finna-multi-level-nav {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.finna-multi-level-nav .finna-nav-tabs {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .finna-navbar-component .navbar-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .finna-navbar-component .navbar-toggle {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .finna-navbar-component .navbar-brand {
+    flex-grow: 1;
+    height: auto;
+    max-width: none;
+    line-height: normal;
+  }
+  .finna-navbar-component .navbar-collapse > ul > li {
+    border-bottom: 1px solid #d1d1d1;
+  }
+  .finna-navbar-component .navbar-nav > li > a {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+.finna-navbar-icon-caret {
+  font-family: finnaicons;
+  font-style: normal;
+}
+.finna-navbar-icon-caret::after {
+  content: '\e612';
+}
+.finna-navbar-component .navbar-toggle.collapsed .finna-navbar-icon-caret::after {
+  content: '\e613';
+}
+.finna-navbar-content {
+  background-color: #007c90;
+  border-color: #007c90;
+}
+.finna-navbar-content .navbar-brand,
+.finna-navbar-content .navbar-brand > a {
+  color: #f2f8f9;
+}
+.finna-navbar-content .navbar-brand:hover,
+.finna-navbar-content .navbar-brand > a:hover,
+.finna-navbar-content .navbar-brand:focus,
+.finna-navbar-content .navbar-brand > a:focus {
+  color: #f2f8f9;
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-text {
+  color: #f2f8f9;
+}
+.finna-navbar-content .navbar-nav > li > a {
+  color: #f2f8f9;
+}
+.finna-navbar-content .navbar-nav > li > a:hover,
+.finna-navbar-content .navbar-nav > li > a:focus {
+  color: #f2f8f9;
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-nav > .active > a,
+.finna-navbar-content .navbar-nav > .active > a:hover,
+.finna-navbar-content .navbar-nav > .active > a:focus {
+  color: #f2f8f9;
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-nav > .disabled > a,
+.finna-navbar-content .navbar-nav > .disabled > a:hover,
+.finna-navbar-content .navbar-nav > .disabled > a:focus {
+  color: #f2f8f9;
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-nav > .open > a,
+.finna-navbar-content .navbar-nav > .open > a:hover,
+.finna-navbar-content .navbar-nav > .open > a:focus {
+  color: #f2f8f9;
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-toggle {
+  border-color: #007c90;
+}
+.finna-navbar-content .navbar-toggle:hover,
+.finna-navbar-content .navbar-toggle:focus {
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-toggle .icon-bar {
+  background-color: #007c90;
+}
+.finna-navbar-content .navbar-collapse,
+.finna-navbar-content .navbar-form {
+  border-color: #007c90;
+}
+@media (max-width: 991px) {
+  .finna-navbar-content .navbar-collapse,
+  .finna-navbar-content .navbar-form {
+    color: #121212;
+    background-color: #fff;
+  }
+  .finna-navbar-content .navbar-collapse .navbar-nav > li > a,
+  .finna-navbar-content .navbar-form .navbar-nav > li > a,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > li > a,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > li > a,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > li > a,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > li > a,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a {
+    color: #121212;
+    background-color: #fff;
+  }
+  .finna-navbar-content .navbar-collapse .navbar-nav > li > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > li > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > li > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > li > a:hover,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > li > a:hover,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > li > a:hover,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a:hover,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > li > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > li > a:focus,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > li > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > li > a:focus,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > li > a:focus,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > li > a:focus,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a:focus,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > li > a:focus {
+    color: #000000;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  .finna-navbar-content .navbar-collapse .navbar-nav > .active > a,
+  .finna-navbar-content .navbar-form .navbar-nav > .active > a,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .active > a,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .active > a,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .active > a,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .active > a,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .active > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > .active > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .active > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .active > a:hover,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .active > a:hover,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .active > a:hover,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a:hover,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .active > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > .active > a:focus,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .active > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .active > a:focus,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .active > a:focus,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .active > a:focus,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a:focus,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+  .finna-navbar-content .navbar-collapse .navbar-nav > .disabled > a,
+  .finna-navbar-content .navbar-form .navbar-nav > .disabled > a,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .disabled > a,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .disabled > a,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .disabled > a,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .disabled > a,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .disabled > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > .disabled > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .disabled > a:hover,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .disabled > a:hover,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .disabled > a:hover,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .disabled > a:hover,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a:hover,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a:hover,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .disabled > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > .disabled > a:focus,
+  .finna-navbar-content .navbar-collapse .navbar-nav > .dropdown > .disabled > a:focus,
+  .finna-navbar-content .navbar-form .navbar-nav > .dropdown > .disabled > a:focus,
+  .finna-navbar-content .navbar-collapse .open .dropdown-menu > .disabled > a:focus,
+  .finna-navbar-content .navbar-form .open .dropdown-menu > .disabled > a:focus,
+  .finna-navbar-content .navbar-collapse .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a:focus,
+  .finna-navbar-content .navbar-form .open:not(.logoutOptions):not(.browsebar-dropdown) .dropdown-menu > .disabled > a:focus {
+    color: #121212;
+    background-color: #fff;
+  }
+}
+.finna-navbar-content .navbar-link {
+  color: #f2f8f9;
+}
+.finna-navbar-content .navbar-link:hover {
+  color: #f2f8f9;
+}
+.finna-navbar-content .btn-link {
+  color: #f2f8f9;
+}
+.finna-navbar-content .btn-link:hover,
+.finna-navbar-content .btn-link:focus {
+  color: #f2f8f9;
+}
+.finna-navbar-content .btn-link[disabled]:hover,
+fieldset[disabled] .finna-navbar-content .btn-link:hover,
+.finna-navbar-content .btn-link[disabled]:focus,
+fieldset[disabled] .finna-navbar-content .btn-link:focus {
+  color: #f2f8f9;
+}
+.finna-md-editable {
+  padding: 0;
+  padding: 5px;
+}
+.finna-md-editable .fa {
+  margin-top: 0.25rem;
+  margin-right: 5px;
+}
+.finna-md-editable .fa-pen {
+  margin-bottom: -12px;
+}
+.finna-md-editable h1 {
+  display: inherit;
+}
+.finna-md-editable ul,
+.finna-md-editable ol {
+  margin-left: 25px;
+}
+.finna-md-editable ul li {
+  list-style-type: disc;
+}
+.finna-md-editable ol li {
+  list-style-type: decimal;
+}
+@media (min-width: 768px) {
+  .finna-md-editable {
+    margin-bottom: 4px;
+  }
+}
+.finna-md-editable .editor-toolbar {
+  position: relative;
+  padding-right: 3.2rem;
+}
+.finna-md-editable .editor-toolbar .editor-toolbar-close {
+  position: absolute;
+  right: 0;
+  top: 0.8rem;
+  border: none;
+  color: #2b2b2b !important;
+  font-size: 1.6rem;
+}
+.finna-md-editable .editor-toolbar .editor-toolbar-close:hover,
+.finna-md-editable .editor-toolbar .editor-toolbar-close:active {
+  background: white;
+  color: #2b2b2b !important;
+}
+.finna-md-editable .markdown-preview {
+  display: none;
+}
+.finna-md-editable.finna-editable-open .CodeMirror {
+  height: 300px;
+}
+.finna-md-editable.finna-editable-open .markdown-preview {
+  position: relative;
+  display: block;
+  padding: 10px;
+  background: #fafafa;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #d1d1d1;
+}
+.finna-md-editable.finna-editable-open .markdown-preview .preview {
+  position: absolute;
+  right: 40px;
+  background-color: #fff;
+  padding: 3px 9px;
+}
+.finna-md-editable > p {
+  margin: 0;
+}
+.finna-md-editable.edit .fa-pen {
+  display: none;
+}
+
+/*# sourceMappingURL=components.css.map */
