@@ -1,7 +1,8 @@
 /node_modules/
 /public/
-!/public/css/components.css
-!/public/css/components.css.map
-/source/_meta/_foot.mustache
-/source/_meta/_head.mustache
+/source/_meta/*.mustache
+/source/css/vendor/
+/source/fonts/styleguide/
+/source/js/styleguide/vendor/
+/source/js/vendor/
 /dependencyGraph.json
