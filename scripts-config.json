@@ -22,7 +22,7 @@
   },
   "copyJs": [
     ["source/components/molecules/containers/finna-truncate/finna-truncate.js", "public/components/molecules/containers/finna-truncate/finna-truncate.js"],
-    ["source/components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.js", "public/components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.js"],
+    ["source/components/organisms/navigation/finna-bazaar-browse-bar/finna-bazaar-browse-bar.js", "public/components/organisms/navigation/finna-bazaar-browse-bar/finna-bazaar-browse-bar.js"],
     ["source/components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.js", "public/components/organisms/navigation/finna-tabs-nav/finna-tabs-nav.js"],
     ["source/components/organisms/widgets/finna-md-editable/finna-md-editable.js", "public/components/organisms/widgets/finna-md-editable/finna-md-editable.js"]
   ]
