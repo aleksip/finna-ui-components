@@ -33,6 +33,17 @@ var VuFind = (function VuFind() {
   };
 })();
 
+/**
+ * Keyboard and focus controllers
+ * Adapted from Micromodal
+ * - https://github.com/ghosh/Micromodal/blob/master/lib/src/index.js
+ */
+const FOCUSABLE_ELEMENTS = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'];
+function getFocusableNodes(container) {
+  const nodes = container.querySelectorAll(FOCUSABLE_ELEMENTS);
+  return Array.from(nodes);
+}
+
 $(document).ready(function onDocumentReady() {
   VuFind.init();
 });
