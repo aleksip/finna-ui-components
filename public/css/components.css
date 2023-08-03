@@ -142,6 +142,22 @@ finna-truncate span[slot="label"] {
   font-weight: bold;
   text-transform: uppercase;
 }
+.finna-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.finna-tag-list * {
+  padding: 5px 10px;
+}
+.finna-tag-list dt {
+  font-weight: normal;
+}
+.finna-tag-list li,
+.finna-tag-list dd {
+  border-radius: 0.5em;
+  background-color: #f4f4f4;
+}
 .finna-nav {
   font-size: 1em;
 }
